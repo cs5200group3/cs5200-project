@@ -15,20 +15,3 @@ The TicketNest project aims to be an easy and efficient platform for event ticke
 | Yi Fan        |                     |                         |                   |
 | Hange Zhang   | CO, TW, ME          | IMP, SP, PL             | SH, RI, CF        |
 
-**Plant (PL)**: Creative, innovative, and good at solving problems in unconventional ways.
-
-**Resource Investigator (RI)**: Extroverted, communicative, and adept at exploring opportunities and developing contacts.
-
-**Co-ordinator (CO)**: Mature, confident, and good at delegating tasks to the right team members.
-
-**Shaper (SH)**: Challenging, dynamic, and thrives on pressure to drive the team towards goals.
-
-**Monitor Evaluator (ME)**: Logical, impartial, and good at analyzing and evaluating ideas objectively.
-
-**Teamworker (TW)**: Cooperative, diplomatic, and good at ensuring team cohesion and resolving conflicts.
-
-**Implementer (IMP)**: Practical, disciplined, and efficient at turning ideas into actions.
-
-**Completer-Finisher (CF)**: Detail-oriented, conscientious, and good at ensuring thorough completion of tasks.
-
-**Specialist (SP)**: Dedicated, knowledgeable, and provides in-depth expertise in a specific area.
