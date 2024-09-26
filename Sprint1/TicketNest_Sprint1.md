@@ -1,0 +1,34 @@
+# CS5200 Sprint1
+
+## Group 3
+
+### Executive Summary
+
+The TicketNest project aims to be an easy and efficient platform for event ticketing. It helps users, event organizers, and administrators work together to manage and attend events smoothly. The focus is on making the ticket-buying process simple and providing clear information about events. There are options to support accessibility so that everyone can join in. Users can get a more personalized experience by choosing their favorite event types and getting tailer-made notifications. Organizers can set up their events easily and track the performance metrics. Meanwhile, administrators help keep the platform safe, organized, and running well for all users.
+
+### Team Roles
+
+| Team Member   | Belbin Strong Roles | Belbin Manageable Roles | Belbin Weak Roles |
+|---------------|---------------------|-------------------------|-------------------|
+| Yibing Chen   | SH, CF, SP          | ME, IMP, TW             | CO, PL, RI        |
+| Shiyuan Chen  |                     |                         |                   |
+| Yi Fan        |                     |                         |                   |
+| Hange Zhang   | CO, TW, ME          | IMP, SP, PL             | SH, RI, CF        |
+
+**Plant (PL)**: Creative, innovative, and good at solving problems in unconventional ways.
+
+**Resource Investigator (RI)**: Extroverted, communicative, and adept at exploring opportunities and developing contacts.
+
+**Co-ordinator (CO)**: Mature, confident, and good at delegating tasks to the right team members.
+
+**Shaper (SH)**: Challenging, dynamic, and thrives on pressure to drive the team towards goals.
+
+**Monitor Evaluator (ME)**: Logical, impartial, and good at analyzing and evaluating ideas objectively.
+
+**Teamworker (TW)**: Cooperative, diplomatic, and good at ensuring team cohesion and resolving conflicts.
+
+**Implementer (IMP)**: Practical, disciplined, and efficient at turning ideas into actions.
+
+**Completer-Finisher (CF)**: Detail-oriented, conscientious, and good at ensuring thorough completion of tasks.
+
+**Specialist (SP)**: Dedicated, knowledgeable, and provides in-depth expertise in a specific area.
