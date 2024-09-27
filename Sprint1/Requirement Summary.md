@@ -87,6 +87,20 @@
   - notification_type
   - notification_content
   - notification_sent_sent_time
+ 
+- Userrequest
+  - user_request_id
+  - requester_acount_id
+  - processer_account_id
+  - requested_action
+  - Request_time
+  - reply_message
+  - reply_time
+  - Addressed
+
+- Genre
+  - genre_id
+  - genre_name
 
 ## 2. Lucas Ramirez (Event Coordinator)
 
