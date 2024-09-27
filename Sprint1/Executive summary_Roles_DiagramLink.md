@@ -15,3 +15,9 @@ The TicketNest project aims to be an easy and efficient platform for event ticke
 | Yi Fan        |                     |                         |                   |
 | Hange Zhang   | CO, TW, ME          | IMP, SP, PL             | SH, RI, CF        |
 
+### ER Diagram
+
+We have created an Entity-Relationship (ER) diagram to visualize the database structure for TicketNest. The ER diagram can be viewed and edited using the following link:
+
+[TicketNest ER Diagram](https://drawdb.vercel.app/editor?shareId=f02d2f07e2235de2d056af4a950248de)
+
