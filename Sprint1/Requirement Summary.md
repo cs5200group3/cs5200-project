@@ -177,11 +177,10 @@
 
 ### Key Tasks:
 - Monitor user activity
-- Manage user accounts
+- Manage accounts, including processing any deactivation or reactivation requests
 - Analyze performance metrics
 - Process refund requests
 - Moderate reviews
-- Oversee platform security and data protection
 
 ### Important Entities and Attributes:
 
@@ -189,6 +188,11 @@
   - account_id
   - account_type
   - username
+  - password
+  - first_name
+  - last_name
+  - email
+  - phone
   - account_status
   - last_activity
   - account_creation_time
@@ -196,10 +200,9 @@
 - Order
   - order_id
   - user
-  - order_time
-  - order_total
-  - order_status
+  - payment_id
   - refund_requested
+  - order_status
 
 - Event
   - event_id
@@ -223,9 +226,9 @@
   - order_id
   - payment_id
   - refund_amount
+  - refund_reason
   - refund_time
   - refund_status
-  - refund_reason
   - admin
 
 - UserRequest
@@ -243,14 +246,7 @@
   - event_id
   - notification_type
   - notification_content
-  - notification_sent_sent_time
-
-- Payment
-  - payment_id
-  - payment_status
-  - payment_time
-  - payment_method
-  - refunded
+  - notification_sent_time
 
 - Message
   - message_id
