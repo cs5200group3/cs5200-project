@@ -7,6 +7,7 @@
 - Manage account preferences
 - Request refunds
 - Receive notifications about events and changes
+- Request further action for ones account
 
 ### Important Entities and Attributes:
 
