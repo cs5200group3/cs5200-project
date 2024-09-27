@@ -3,11 +3,22 @@
 ## 1. Emma Thompson (Marketing Specialist, Customer)
 
 ### Key Tasks:
-- Search for and purchase event tickets
+- Search for and browse events
+  - Use filters or categories to find events of interest
+- Purchase event tickets
+  - Select ticket types and quantities
+  - Complete the checkout process
 - Manage account preferences
-- Request refunds
-- Receive notifications about events and changes
-- Request further action for ones account
+  - Set up and update profile information
+  - Select favorite genres or event types
+  - Manage notification preferences 
+- Request refunds if unable to attend an event
+- Receive and view notifications about:
+  - Upcoming events aligned with interests
+  - Special promotions or discounts
+  - Order history and current ticket holdings
+- Access and use digital tickets for event entry
+- Leave reviews for attended events
 
 ### Important Entities and Attributes:
 
@@ -88,30 +99,41 @@
   - notification_type
   - notification_content
   - notification_sent_sent_time
- 
-- Userrequest
-  - user_request_id
-  - requester_acount_id
-  - processer_account_id
-  - requested_action
-  - Request_time
-  - reply_message
-  - reply_time
-  - Addressed
-
-- Genre
-  - genre_id
-  - genre_name
 
 ## 2. Lucas Ramirez (Event Coordinator)
 
 ### Key Tasks:
-- Create and manage events
-- Monitor ticket sales and metrics
+- Input essential event details (name, date, location, description)
+- Categorize events to reach the right audience
+- Monitor ticket sales and metrics in real-time
+- Analyze sales performance and trends
+- Create and manage different ticket types (e.g., General Admission, VIP)
+- Adjust ticket pricing and availability based on demand
 - Communicate with attendees
-- Manage different ticket types and pricing
+- Send announcements and important updates to ticket holders
+- Respond to attendee inquiries
+
 
 ### Important Entities and Attributes:
+
+- Account
+  - account_id
+  - username
+  - email
+  - phone
+  - account_type
+  - account_status
+  - last_activity
+  - account_creation_time
+
+- UserRequest
+  - user_request_id
+  - requester_acount_id
+  - requested_action
+  - request_time
+  - reply_message
+  - reply_time
+  - addressed
 
 - Event
   - event_id
@@ -148,6 +170,8 @@
 
 - Account (for attendees)
   - account_id
+  - first_name
+  - last_name
   - email
   - phone
 
