@@ -12,7 +12,7 @@ The TicketNest project aims to be an easy and efficient platform for event ticke
 |---------------|---------------------|-------------------------|-------------------|
 | Yibing Chen   | SH, CF, SP          | ME, IMP, TW             | CO, PL, RI        |
 | Shiyuan Chen  | RI, ME, CO          | SH, IMP, TW             | PL, CF, SP        |
-| Yi Fan        |                     |                         |                   |
+| Yi Fan        | PL, ME, IMP         | TW, RI, SP              | CO, CF, SH        |
 | Hange Zhang   | CO, TW, ME          | IMP, SP, PL             | SH, RI, CF        |
 
 ### ER Diagram
