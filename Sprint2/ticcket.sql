@@ -53,6 +53,16 @@ CREATE TABLE `UserNotificationType` (
 );
 
 
+CREATE TABLE `Payment` (
+	`payment_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
+	`payment_status` ENUM('Pending', 'Paid', 'Cancelled', 'Refunded'),
+	`payment_time` DATETIME,
+	`payment_method` ENUM('Credit Card', 'Debit Card', 'PayPal', 'Apple Pay', 'Google Pay'),
+	`refunded` BOOLEAN,
+	PRIMARY KEY(`payment_id`)
+);
+
+
 CREATE TABLE `Order` (
 	`order_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`payment_id` INTEGER,
@@ -66,16 +76,6 @@ CREATE TABLE `Order` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION,
 	FOREIGN KEY(`payment_id`) REFERENCES `Payment`(`payment_id`)
 		ON UPDATE NO ACTION ON DELETE NO ACTION  -- No cascade for payment
-);
-
-
-CREATE TABLE `Payment` (
-	`payment_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`payment_status` ENUM('Pending', 'Paid', 'Cancelled', 'Refunded'),
-	`payment_time` DATETIME,
-	`payment_method` ENUM('Credit Card', 'Debit Card', 'PayPal', 'Apple Pay', 'Google Pay'),
-	`refunded` BOOLEAN,
-	PRIMARY KEY(`payment_id`)
 );
 
 
@@ -125,13 +125,13 @@ CREATE TABLE `Ticket` (
 CREATE TABLE `Notification` (
 	`notification_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`event_id` INTEGER,
-	`notification_type` ENUM('System', 'Promotion', 'Order', 'Event', 'Review'),
+	`notification_type_id` INTEGER,
 	`notification_content` TEXT(65535),
 	`notification_sent_time` DATETIME,
 	PRIMARY KEY(`notification_id`),
 	FOREIGN KEY(`event_id`) REFERENCES `Event`(`event_id`)
 		ON UPDATE CASCADE ON DELETE CASCADE,  -- Cascading delete for event
-	FOREIGN KEY(`notification_type`) REFERENCES `NotificationType`(`notification_type_id`)
+	FOREIGN KEY(`notification_type_id`) REFERENCES `NotificationType`(`notification_type_id`)
 		ON UPDATE NO ACTION ON DELETE NO ACTION  -- No cascade for notification type
 );
 
