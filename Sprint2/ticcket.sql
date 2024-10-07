@@ -1,6 +1,6 @@
 CREATE TABLE `Account` (
 	`account_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`account_type` ENUM(255),
+	`account_type` ENUM("user", "organizer", "admin"),
 	`username` VARCHAR(255),
 	`password` VARCHAR(255),
 	`first_name` VARCHAR(255),
@@ -8,25 +8,24 @@ CREATE TABLE `Account` (
 	`email` VARCHAR(255),
 	`phone` VARCHAR(255),
 	`social_media_link` VARCHAR(255),
-	`accessibility_needs` ENUM(255) COMMENT 'accessibility_needs should only be filled when account_type = ''user''',
-	`account_status` ENUM(255),
+	`accessibility_needs` ENUM('Wheelchair Accessible', 'Hearing Impaired', 'Visual Impaired') COMMENT 'accessibility_needs should only be filled when account_type = ''user''',
+	`account_status` ENUM('Active', 'Inactive'),
 	`last_activity` DATETIME,
 	`account_creation_time` DATETIME,
-	`coordinate_accessibility` ENUM COMMENT 'coordinate_accessibility should only be filled when account_type = ''organizer''',
 	PRIMARY KEY(`account_id`)
 );
 
 
 CREATE TABLE `Genre` (
 	`genre_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`genre_name` ENUM(255),
+	`genre_name` ENUM("concert",  "sports", "art, family & comedy", "family"),
 	PRIMARY KEY(`genre_id`)
 );
 
 
 CREATE TABLE `NotificationType` (
 	`notification_type_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`notification_type` ENUM(255),
+	`notification_type` ENUM('System', 'Promotion', 'Order', 'Event', 'Review'),
 	PRIMARY KEY(`notification_type_id`)
 );
 
@@ -60,7 +59,7 @@ CREATE TABLE `Order` (
 	`user` INTEGER,
 	`order_time` DATETIME,
 	`order_total` DECIMAL,
-	`order_status` ENUM(255),
+	`order_status` ENUM('Pending', 'Paid', 'Cancelled', 'Refunded'),
 	`refund_requested` INTEGER,
 	PRIMARY KEY(`order_id`),
 	FOREIGN KEY(`user`) REFERENCES `Account`(`account_id`)
@@ -72,9 +71,9 @@ CREATE TABLE `Order` (
 
 CREATE TABLE `Payment` (
 	`payment_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`payment_status` ENUM(255),
+	`payment_status` ENUM('Pending', 'Paid', 'Cancelled', 'Refunded'),
 	`payment_time` DATETIME,
-	`payment_method` ENUM(255),
+	`payment_method` ENUM('Credit Card', 'Debit Card', 'PayPal', 'Apple Pay', 'Google Pay'),
 	`refunded` BOOLEAN,
 	PRIMARY KEY(`payment_id`)
 );
@@ -90,10 +89,11 @@ CREATE TABLE `Event` (
 	`event_location` VARCHAR(255),
 	`event_description` TEXT(65535),
 	`event_genre` INTEGER,
+	`event_status` ENUM('Upcoming', 'Active', 'Past'),	
 	`total_tickets` INTEGER,
 	`tickets_sold` INTEGER,
 	`revenue_earned` DECIMAL,
-	`accessibility` ENUM,
+	`accessibility` ENUM('Wheelchair Accessible', 'Hearing Impaired', 'Visual Impaired', 'None'),
 	`image_url` VARCHAR(255),
 	PRIMARY KEY(`event_id`),
 	FOREIGN KEY(`organizer`) REFERENCES `Account`(`account_id`)
@@ -108,7 +108,7 @@ CREATE TABLE `Ticket` (
 	`order_id` INTEGER,
 	`user` INTEGER,
 	`event_id` INTEGER,
-	`ticket_type` ENUM(255),
+	`ticket_type` ENUM('General Admission', 'VIP'),
 	`current_price` DECIMAL,
 	`perks` VARCHAR(255),
 	`sold` BOOLEAN,
@@ -125,7 +125,7 @@ CREATE TABLE `Ticket` (
 CREATE TABLE `Notification` (
 	`notification_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`event_id` INTEGER,
-	`notification_type` ENUM(255),
+	`notification_type` ENUM('System', 'Promotion', 'Order', 'Event', 'Review'),
 	`notification_content` TEXT(65535),
 	`notification_sent_time` DATETIME,
 	PRIMARY KEY(`notification_id`),
@@ -139,10 +139,11 @@ CREATE TABLE `Notification` (
 CREATE TABLE `Review` (
 	`review_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`event_id` INTEGER,
+	`rating` INTEGER,
 	`user` INTEGER,
 	`review_content` TEXT(65535),
 	`review_date` DATETIME,
-	`review_status` ENUM(255),
+	`review_status` ENUM('Flagged', 'Approved', 'Rejected'),
 	`admin` INTEGER,
 	`flagged` BOOLEAN,
 	PRIMARY KEY(`review_id`),
@@ -175,7 +176,7 @@ CREATE TABLE `Refund` (
 	`order_id` INTEGER,
 	`refund_amount` DECIMAL,
 	`refund_time` DATETIME,
-	`refund_status` ENUM(255),
+	`refund_status` ENUM('Pending', 'Approved', 'Rejected'),
 	`refund_reason` TEXT(65535),
 	`admin` INTEGER,
 	PRIMARY KEY(`refund_id`),
