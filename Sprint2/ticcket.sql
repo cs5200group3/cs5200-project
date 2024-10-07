@@ -1,6 +1,6 @@
 CREATE TABLE `Account` (
 	`account_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`account_type` ENUM("user", "organizer", "admin"),
+	`account_type` ENUM('user', 'organizer', 'admin'),
 	`username` VARCHAR(255),
 	`password` VARCHAR(255),
 	`first_name` VARCHAR(255),
@@ -18,7 +18,7 @@ CREATE TABLE `Account` (
 
 CREATE TABLE `Genre` (
 	`genre_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`genre_name` ENUM("concert",  "sports", "art, family & comedy", "family"),
+	`genre_name` ENUM('concert', 'sports', 'art, family & comedy', 'family'),
 	PRIMARY KEY(`genre_id`)
 );
 
