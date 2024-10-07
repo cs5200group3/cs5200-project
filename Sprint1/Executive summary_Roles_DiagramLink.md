@@ -11,13 +11,13 @@ The TicketNest project aims to be an easy and efficient platform for event ticke
 | Team Member   | Belbin Strong Roles | Belbin Manageable Roles | Belbin Weak Roles |
 |---------------|---------------------|-------------------------|-------------------|
 | Yibing Chen   | SH, CF, SP          | ME, IMP, TW             | CO, PL, RI        |
-| Shiyuan Chen  |                     |                         |                   |
-| Yi Fan        |                     |                         |                   |
+| Shiyuan Chen  | RI, ME, CO          | SH, IMP, TW             | PL, CF, SP        |
+| Yi Fan        | PL, ME, IMP         | TW, RI, SP              | CO, CF, SH        |
 | Hange Zhang   | CO, TW, ME          | IMP, SP, PL             | SH, RI, CF        |
 
 ### ER Diagram
 
 We have created an Entity-Relationship (ER) diagram to visualize the database structure for TicketNest. The ER diagram can be viewed and edited using the following link:
 
-[TicketNest ER Diagram](https://drawdb.vercel.app/editor?shareId=f02d2f07e2235de2d056af4a950248de)
+[TicketNest ER Diagram](https://drawdb.vercel.app/editor?shareId=d40e0a8af419f39a92ca4fb3a95cb3d1)
 

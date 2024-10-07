@@ -18,6 +18,7 @@
   - Special promotions or discounts
   - Order history and current ticket holdings
 - Access and use digital tickets for event entry
+- Specify accessibility requirements
 - Leave reviews for attended events
 
 ### Important Entities and Attributes:
@@ -68,6 +69,7 @@
   - event_location
   - event_description
   - event_genre
+  - accessibility_needs
 
 - Refund
   - refund_id
@@ -112,6 +114,7 @@
 - Communicate with attendees
 - Send announcements and important updates to ticket holders
 - Respond to attendee inquiries
+- Coordinate accessibility needs for users
 
 
 ### Important Entities and Attributes:
@@ -125,6 +128,7 @@
   - account_status
   - last_activity
   - account_creation_time
+  - coordinate_accessibility
 
 - UserRequest
   - user_request_id
@@ -148,6 +152,7 @@
   - total_tickets
   - tickets_sold
   - revenue_earned
+  - accessibility_needs
 
 - Ticket
   - ticket_id
