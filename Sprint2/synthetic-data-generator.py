@@ -1,7 +1,8 @@
 import mysql.connector
 import random
 from faker import Faker
-from account_generate import generate_accounts, insert_accounts, generate_and_insert_accounts
+from account_generate import generate_accounts, insert_accounts, \
+    generate_and_insert_accounts
 
 # Database connection configuration for Aiven MySQL
 db_config = {
