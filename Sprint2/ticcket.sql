@@ -1,3 +1,4 @@
+# SHIYUAN
 CREATE TABLE `Account` (
 	`account_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`account_type` ENUM('user', 'organizer', 'admin'),
@@ -14,21 +15,21 @@ CREATE TABLE `Account` (
 	PRIMARY KEY(`account_id`)
 );
 
-
+# FAN
 CREATE TABLE `Genre` (
 	`genre_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`genre_name` VARCHAR(255)('concert', 'sports', 'art, family & comedy', 'family'),
 	PRIMARY KEY(`genre_id`)
 );
 
-
+# FAN
 CREATE TABLE `NotificationType` (
 	`notification_type_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`notification_type` VARCHAR(255)('System', 'Promotion', 'Order', 'Event', 'Review'),
 	PRIMARY KEY(`notification_type_id`)
 );
 
-
+# FAN
 CREATE TABLE `UserGenre` (
 	`genre_id` INTEGER,
 	`user` INTEGER,
@@ -39,7 +40,7 @@ CREATE TABLE `UserGenre` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION  -- No cascade for genre
 );
 
-
+# FAN
 CREATE TABLE `UserNotificationType` (
 	`user` INTEGER,
 	`notification_type_id` INTEGER,
@@ -51,7 +52,7 @@ CREATE TABLE `UserNotificationType` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION  -- No cascade for notification type
 );
 
-
+# YIBIN
 CREATE TABLE `Payment` (
 	`payment_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`payment_status` ENUM('Pending', 'Paid', 'Cancelled', 'Refunded'),
@@ -61,7 +62,7 @@ CREATE TABLE `Payment` (
 	PRIMARY KEY(`payment_id`)
 );
 
-
+# YIBIN
 CREATE TABLE `Order` (
 	`order_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`payment_id` INTEGER,
@@ -77,7 +78,7 @@ CREATE TABLE `Order` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION  -- No cascade for payment
 );
 
-
+# CHRIS
 CREATE TABLE `Event` (
 	`event_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`organizer` INTEGER,
@@ -101,7 +102,7 @@ CREATE TABLE `Event` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION  -- No cascade for genre
 );
 
-
+# CHRIS
 CREATE TABLE `Ticket` (
 	`ticket_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`order_id` INTEGER,
@@ -120,7 +121,7 @@ CREATE TABLE `Ticket` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
-
+# FAN
 CREATE TABLE `Notification` (
 	`notification_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`event_id` INTEGER,
@@ -134,7 +135,7 @@ CREATE TABLE `Notification` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION  -- No cascade for notification type
 );
 
-
+# CHEN
 CREATE TABLE `Review` (
 	`review_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`event_id` INTEGER,
@@ -154,7 +155,7 @@ CREATE TABLE `Review` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
-
+# CHEN
 CREATE TABLE `Feedback` (
 	`feedback_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`organizer` INTEGER,
@@ -168,7 +169,7 @@ CREATE TABLE `Feedback` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
-
+# YIBIN
 CREATE TABLE `Refund` (
 	`refund_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`payment_id` INTEGER,
@@ -187,7 +188,7 @@ CREATE TABLE `Refund` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION  -- No cascade for admin
 );
 
-
+# FAN
 CREATE TABLE `UserRequest` (
 	`user_request_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`requester_account_id` INTEGER,
@@ -204,7 +205,7 @@ CREATE TABLE `UserRequest` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
-
+# IGNOREFORNOW
 CREATE TABLE `Message` (
 	`message_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`recipient` INTEGER,

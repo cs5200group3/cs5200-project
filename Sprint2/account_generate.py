@@ -1,6 +1,7 @@
 import mysql.connector
 import random
 from faker import Faker
+from datetime import datetime
 
 
 # Function to generate a formatted phone number
@@ -17,6 +18,10 @@ def generate_accounts(num_accounts, account_type):
     fake = Faker()
     accounts = []
 
+    # Define accessibility needs and their corresponding weights
+    accessibility_options = ['Wheelchair Accessible', 'Hearing Impaired', 'Visual Impaired', 'None']
+    weights = [0.03, 0.03, 0.02, 0.92]  # Adjust weights as needed
+
     for _ in range(num_accounts):
         account = {
             'account_type': account_type,
@@ -26,8 +31,8 @@ def generate_accounts(num_accounts, account_type):
             'last_name': fake.last_name(),
             'email': fake.email(),
             'phone': generate_phone_number(),  # Use the custom phone number generator
-            'accessibility_needs': random.choice(['Wheelchair Accessible', 'Hearing Impaired', 'Visual Impaired']),
-            'account_status': random.choice(['Active', 'Inactive']),
+            'accessibility_needs': random.choices(accessibility_options, weights=weights, k=1)[0],
+            'account_status': 'Active',
             'last_activity': fake.date_time_this_year(),
             'account_creation_time': fake.date_time_this_year()
         }
@@ -76,25 +81,20 @@ def generate_and_insert_accounts(cursor, conn):  # Accept conn as a parameter
     num_organizers = 50
     num_users = 450 
     num_admins = 1
-    num_accessibility_needs = 50  # Number of accounts with accessibility needs
+    num_inactive_users = 30
 
     # Generate organizers
     organizers = generate_accounts(num_organizers, 'organizer')
-    # Set accessibility needs for 50 organizers (if needed, otherwise keep as 'None')
-    for i in range(num_organizers):
-        organizers[i]['accessibility_needs'] = 'None'
     
     # Generate users
     users = generate_accounts(num_users, 'user')
-    # Set accessibility needs for 50 users
-    for i in range(num_accessibility_needs):
-        users[i]['accessibility_needs'] = random.choice(['Wheelchair Accessible', 'Hearing Impaired', 'Visual Impaired'])
+    
+    # set inactiveaccount status for 30 users
+    for i in range(num_inactive_users):
+        users[i]['account_status'] = 'Inactive'
 
     # Generate admins
     admins = generate_accounts(num_admins, 'admin')
-    # Set accessibility needs for admins (if needed, otherwise keep as 'None')
-    for i in range(num_admins):
-        admins[i]['accessibility_needs'] = 'None'
 
     # Combine all accounts
     synthetic_accounts = users + organizers + admins
