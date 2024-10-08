@@ -7,7 +7,6 @@ CREATE TABLE `Account` (
 	`last_name` VARCHAR(255),
 	`email` VARCHAR(255),
 	`phone` VARCHAR(255),
-	`social_media_link` VARCHAR(255),
 	`accessibility_needs` ENUM('Wheelchair Accessible', 'Hearing Impaired', 'Visual Impaired', 'None') COMMENT 'accessibility_needs should only be filled when account_type = ''user''',
 	`account_status` ENUM('Active', 'Inactive'),
 	`last_activity` DATETIME,
@@ -18,14 +17,14 @@ CREATE TABLE `Account` (
 
 CREATE TABLE `Genre` (
 	`genre_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`genre_name` ENUM('concert', 'sports', 'art, family & comedy', 'family'),
+	`genre_name` VARCHAR(255)('concert', 'sports', 'art, family & comedy', 'family'),
 	PRIMARY KEY(`genre_id`)
 );
 
 
 CREATE TABLE `NotificationType` (
 	`notification_type_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`notification_type` ENUM('System', 'Promotion', 'Order', 'Event', 'Review'),
+	`notification_type` VARCHAR(255)('System', 'Promotion', 'Order', 'Event', 'Review'),
 	PRIMARY KEY(`notification_type_id`)
 );
 
