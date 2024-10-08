@@ -8,7 +8,7 @@ CREATE TABLE `Account` (
 	`email` VARCHAR(255),
 	`phone` VARCHAR(255),
 	`social_media_link` VARCHAR(255),
-	`accessibility_needs` ENUM('Wheelchair Accessible', 'Hearing Impaired', 'Visual Impaired') COMMENT 'accessibility_needs should only be filled when account_type = ''user''',
+	`accessibility_needs` ENUM('Wheelchair Accessible', 'Hearing Impaired', 'Visual Impaired', 'None') COMMENT 'accessibility_needs should only be filled when account_type = ''user''',
 	`account_status` ENUM('Active', 'Inactive'),
 	`last_activity` DATETIME,
 	`account_creation_time` DATETIME,
