@@ -30,8 +30,8 @@ CREATE TABLE `NotificationType` (
 
 
 CREATE TABLE `UserGenre` (
-	`genre_id` INTEGER,
 	`user` INTEGER,
+	`genre_id` INTEGER,
 	PRIMARY KEY(`user`, `genre_id`),  -- Composite primary key
 	FOREIGN KEY(`user`) REFERENCES `Account`(`account_id`)
 		ON UPDATE CASCADE ON DELETE CASCADE,  -- Cascading delete for user

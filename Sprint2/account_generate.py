@@ -18,9 +18,6 @@ def generate_accounts(num_accounts, account_type):
     fake = Faker()
     accounts = []
 
-    # Define accessibility needs and their corresponding weights
-    accessibility_options = ['Wheelchair Accessible', 'Hearing Impaired', 'Visual Impaired', 'None']
-    weights = [0.03, 0.03, 0.02, 0.92]  # Adjust weights as needed
 
     for _ in range(num_accounts):
         account_creation_time = fake.date_time_this_year()
@@ -32,7 +29,6 @@ def generate_accounts(num_accounts, account_type):
             'last_name': fake.last_name(),
             'email': fake.email(),
             'phone': generate_phone_number(),  # Use the custom phone number generator
-            'accessibility_needs': random.choices(accessibility_options, weights=weights, k=1)[0],
             'account_status': 'Active',
             'account_creation_time': account_creation_time,
             'last_activity': fake.date_time_between(start_date=account_creation_time, end_date='now'),  # Ensure last activity is after creation
@@ -65,7 +61,6 @@ def insert_accounts(accounts, cursor, conn, batch_size=50):
                 account['last_name'],
                 account['email'],
                 account['phone'],
-                account['accessibility_needs'],
                 account['account_status'],
                 account['last_activity'],
                 account['account_creation_time']
