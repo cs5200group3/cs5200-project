@@ -23,6 +23,7 @@ def generate_accounts(num_accounts, account_type):
     weights = [0.03, 0.03, 0.02, 0.92]  # Adjust weights as needed
 
     for _ in range(num_accounts):
+        account_creation_time = fake.date_time_this_year()
         account = {
             'account_type': account_type,
             'username': fake.user_name(),
@@ -33,8 +34,8 @@ def generate_accounts(num_accounts, account_type):
             'phone': generate_phone_number(),  # Use the custom phone number generator
             'accessibility_needs': random.choices(accessibility_options, weights=weights, k=1)[0],
             'account_status': 'Active',
-            'last_activity': fake.date_time_this_year(),
-            'account_creation_time': fake.date_time_this_year()
+            'account_creation_time': account_creation_time,
+            'last_activity': fake.date_time_between(start_date=account_creation_time, end_date='now'),  # Ensure last activity is after creation
         }
         accounts.append(account)
 
