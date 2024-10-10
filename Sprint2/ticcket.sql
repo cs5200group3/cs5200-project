@@ -8,7 +8,6 @@ CREATE TABLE `Account` (
 	`last_name` VARCHAR(255),
 	`email` VARCHAR(255),
 	`phone` VARCHAR(255),
-	`accessibility_needs` ENUM('Wheelchair Accessible', 'Hearing Impaired', 'Visual Impaired', 'None') COMMENT 'accessibility_needs should only be filled when account_type = ''user''',
 	`account_status` ENUM('Active', 'Inactive'),
 	`last_activity` DATETIME,
 	`account_creation_time` DATETIME,
@@ -18,14 +17,14 @@ CREATE TABLE `Account` (
 # FAN
 CREATE TABLE `Genre` (
 	`genre_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`genre_name` VARCHAR(255)('concert', 'sports', 'art, family & comedy', 'family'),
+	`genre_name` VARCHAR(255),
 	PRIMARY KEY(`genre_id`)
 );
 
 # FAN
 CREATE TABLE `NotificationType` (
 	`notification_type_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`notification_type` VARCHAR(255)('System', 'Promotion', 'Order', 'Event', 'Review'),
+	`notification_type` VARCHAR(255),
 	PRIMARY KEY(`notification_type_id`)
 );
 
@@ -55,8 +54,6 @@ CREATE TABLE `UserNotificationType` (
 # YIBIN
 CREATE TABLE `Payment` (
 	`payment_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`payment_status` ENUM('Pending', 'Paid', 'Cancelled', 'Refunded'),
-	`payment_time` DATETIME,
 	`payment_method` ENUM('Credit Card', 'Debit Card', 'PayPal', 'Apple Pay', 'Google Pay'),
 	`refunded` BOOLEAN,
 	PRIMARY KEY(`payment_id`)
@@ -69,13 +66,17 @@ CREATE TABLE `Order` (
 	`user` INTEGER,
 	`order_time` DATETIME,
 	`order_total` DECIMAL,
-	`order_status` ENUM('Pending', 'Paid', 'Cancelled', 'Refunded'),
-	`refund_requested` INTEGER,
+	`order_status` ENUM('Confirmed', 'Refunded'),
+	`event_id` INTEGER,
+	`ticket_type` ENUM('General Admission', 'VIP'),
+	`current_price` DECIMAL,
 	PRIMARY KEY(`order_id`),
 	FOREIGN KEY(`user`) REFERENCES `Account`(`account_id`)
 		ON UPDATE NO ACTION ON DELETE NO ACTION,
 	FOREIGN KEY(`payment_id`) REFERENCES `Payment`(`payment_id`)
 		ON UPDATE NO ACTION ON DELETE NO ACTION  -- No cascade for payment
+	FOREIGN KEY(`event_id`) REFERENCES `Event`(`event_id`)
+		ON UPDATE CASCADE ON DELETE CASCADE,  -- Cascading delete for event
 );
 
 # CHRIS
@@ -89,36 +90,12 @@ CREATE TABLE `Event` (
 	`event_location` VARCHAR(255),
 	`event_description` TEXT(65535),
 	`event_genre` INTEGER,
-	`event_status` ENUM('Upcoming', 'Active', 'Past'),	
 	`total_tickets` INTEGER,
-	`tickets_sold` INTEGER,
-	`revenue_earned` DECIMAL,
-	`accessibility` ENUM('Wheelchair Accessible', 'Hearing Impaired', 'Visual Impaired', 'None'),
-	`image_url` VARCHAR(255),
 	PRIMARY KEY(`event_id`),
 	FOREIGN KEY(`organizer`) REFERENCES `Account`(`account_id`)
 		ON UPDATE NO ACTION ON DELETE NO ACTION,
 	FOREIGN KEY(`event_genre`) REFERENCES `Genre`(`genre_id`)
 		ON UPDATE NO ACTION ON DELETE NO ACTION  -- No cascade for genre
-);
-
-# CHRIS
-CREATE TABLE `Ticket` (
-	`ticket_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`order_id` INTEGER,
-	`user` INTEGER,
-	`event_id` INTEGER,
-	`ticket_type` ENUM('General Admission', 'VIP'),
-	`current_price` DECIMAL,
-	`perks` VARCHAR(255),
-	`sold` BOOLEAN,
-	PRIMARY KEY(`ticket_id`),
-	FOREIGN KEY(`user`) REFERENCES `Account`(`account_id`)
-		ON UPDATE NO ACTION ON DELETE NO ACTION,
-	FOREIGN KEY(`event_id`) REFERENCES `Event`(`event_id`)
-		ON UPDATE CASCADE ON DELETE CASCADE,  -- Cascading delete for event
-	FOREIGN KEY(`order_id`) REFERENCES `Order`(`order_id`)
-		ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
 # FAN
@@ -127,7 +104,6 @@ CREATE TABLE `Notification` (
 	`event_id` INTEGER,
 	`notification_type_id` INTEGER,
 	`notification_content` TEXT(65535),
-	`notification_sent_time` DATETIME,
 	PRIMARY KEY(`notification_id`),
 	FOREIGN KEY(`event_id`) REFERENCES `Event`(`event_id`)
 		ON UPDATE CASCADE ON DELETE CASCADE,  -- Cascading delete for event
@@ -161,7 +137,6 @@ CREATE TABLE `Feedback` (
 	`organizer` INTEGER,
 	`review_id` INTEGER,
 	`feedback_content` TEXT(65535),
-	`feedback_date` DATETIME,
 	PRIMARY KEY(`feedback_id`),
 	FOREIGN KEY(`organizer`) REFERENCES `Account`(`account_id`)
 		ON UPDATE NO ACTION ON DELETE NO ACTION,
@@ -175,8 +150,7 @@ CREATE TABLE `Refund` (
 	`payment_id` INTEGER,
 	`order_id` INTEGER,
 	`refund_amount` DECIMAL,
-	`refund_time` DATETIME,
-	`refund_status` ENUM('Pending', 'Approved', 'Rejected'),
+	`refund_status` ENUM('Approved', 'Rejected'),
 	`refund_reason` TEXT(65535),
 	`admin` INTEGER,
 	PRIMARY KEY(`refund_id`),
@@ -193,7 +167,7 @@ CREATE TABLE `UserRequest` (
 	`user_request_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`requester_account_id` INTEGER,
 	`processer_account_id` INTEGER,
-	`requested_action` VARCHAR(255),
+	`requested_action` ENUM('Activate', 'Deactivate'),
 	`request_time` DATETIME,
 	`reply_message` TEXT(65535),
 	`reply_time` DATETIME,
@@ -205,16 +179,3 @@ CREATE TABLE `UserRequest` (
 		ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
-# IGNOREFORNOW
-CREATE TABLE `Message` (
-	`message_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`recipient` INTEGER,
-	`sender` INTEGER,
-	`message_content` TEXT(65535),
-	`message_time` DATETIME,
-	PRIMARY KEY(`message_id`),
-	FOREIGN KEY(`recipient`) REFERENCES `Account`(`account_id`)
-		ON UPDATE NO ACTION ON DELETE NO ACTION,
-	FOREIGN KEY(`sender`) REFERENCES `Account`(`account_id`)
-		ON UPDATE NO ACTION ON DELETE NO ACTION
-);
