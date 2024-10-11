@@ -45,9 +45,8 @@ def insert_accounts(accounts, cursor, conn, batch_size=50):
     insert_query = """
     INSERT INTO `Account` (
         `account_type`, `username`, `password`, `first_name`, `last_name`, 
-        `email`, `phone`, `accessibility_needs`, 
-        `account_status`, `last_activity`, `account_creation_time`
-    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        `email`, `phone`, `account_status`, `last_activity`, `account_creation_time`
+    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
     """
     
     for i in range(0, len(accounts), batch_size):
