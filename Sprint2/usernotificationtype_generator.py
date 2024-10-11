@@ -55,7 +55,7 @@ db_config = {
     'port': 26740, 
     'user': 'avnadmin',  # Replace with your Aiven username
     'password': 'AVNS_k8-EKEKB0de1fhIa09w',  # Replace with your Aiven password
-    'database': 'Sprint2'  # Replace with your database name
+    'database': 'sprint2'  # Replace with your database name
 }
 
 # Connect to the database
@@ -94,7 +94,7 @@ def generate_and_insert_organizer_notifications(num_new_users=50):
         print(f"Max user ID in the database is {max_user_id}")
         
         # Generate the random user notifications starting from the next user ID
-        user_notifications = generate_user_notifications(start_user_id=max_user_id + 1, num_users=num_new_users)
+        user_notifications = generate_organizer_notifications(start_user_id=max_user_id + 1, num_users=num_new_users)
         
         # Insert the user notifications into the database
         insert_user_notifications(user_notifications, cursor, conn)
@@ -113,7 +113,7 @@ def generate_and_insert_admin_notifications(num_new_users=1):
         print(f"Max user ID in the database is {max_user_id}")
         
         # Generate the random user notifications starting from the next user ID
-        user_notifications = generate_user_notifications(start_user_id=max_user_id + 1, num_users=num_new_users)
+        user_notifications = generate_admin_notifications(start_user_id=max_user_id + 1, num_users=num_new_users)
         
         # Insert the user notifications into the database
         insert_user_notifications(user_notifications, cursor, conn)
@@ -122,3 +122,9 @@ def generate_and_insert_admin_notifications(num_new_users=1):
     finally:
         cursor.close()
         conn.close()
+        print("Database connection closed.")
+
+if __name__ == "__main__":
+    generate_and_insert_user_notifications(num_new_users=450)
+    generate_and_insert_organizer_notifications(num_new_users=50)
+    generate_and_insert_admin_notifications(num_new_users=1)
