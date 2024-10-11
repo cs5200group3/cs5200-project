@@ -30,8 +30,8 @@ def generate_accounts(num_accounts, account_type):
             'email': fake.email(),
             'phone': generate_phone_number(),  # Use the custom phone number generator
             'account_status': 'Active',
-            'last_activity': fake.date_time_between(start_date=account_creation_time, end_date='now'),  # Ensure last activity is after creation
             'account_creation_time': account_creation_time,
+            'last_activity': fake.date_time_between(start_date=account_creation_time, end_date='now'),  # Ensure last activity is after creation
         }
         accounts.append(account)
 
@@ -45,8 +45,9 @@ def insert_accounts(accounts, cursor, conn, batch_size=50):
     insert_query = """
     INSERT INTO `Account` (
         `account_type`, `username`, `password`, `first_name`, `last_name`, 
-        `email`, `phone`, `account_status`, `last_activity`, `account_creation_time` 
-    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        `email`, `phone`, `accessibility_needs`, 
+        `account_status`, `last_activity`, `account_creation_time`
+    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
     """
     
     for i in range(0, len(accounts), batch_size):

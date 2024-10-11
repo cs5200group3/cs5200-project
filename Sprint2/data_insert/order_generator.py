@@ -21,7 +21,7 @@ def generate_orders(events, num_orders=10):
                 'user': random.randint(1, 450),
                 'order_time': fake.date_time_between(start_date=start_date, end_date=event['event_date']),
                 'price': random.uniform(100, 200) if ticket_type == 'VIP' else random.uniform(50, 100),
-                'order_status': random.choices(['Confirmed', 'Refunded'], weights = [95, 5], k=1)[0],
+                'order_status': random.choices(['Confirmed', 'Refunded'], weights = [92, 8], k=1)[0],
                 'event_id': (i + 1),
                 'ticket_type': ticket_type
             }
