@@ -2,7 +2,7 @@ import mysql.connector
 import random
 
 # Function to generate random number combinations of random length (1 to 4)
-def generate_random_combinations(NUM_USERS):
+def generate_random_combinations(NUM_USERS=450):
     combinations = []
     for i in range(1, NUM_USERS + 1):
         # Choose a random length for the combination (between 1 and 4)
@@ -30,7 +30,7 @@ db_config = {
     'port': 26740, 
     'user': 'avnadmin',  # Replace with your Aiven username
     'password': 'AVNS_k8-EKEKB0de1fhIa09w',  # Replace with your Aiven password
-    'database': 'Sprint2'  # Replace with your database name
+    'database': 'sprint2'  # Replace with your database name
 }
 
 # Connect to the database
@@ -55,3 +55,7 @@ def generate_and_insert_combinations():
     finally:
         cursor.close()
         conn.close()
+        print("Database connection closed.")
+
+if __name__ == "__main__":
+    generate_and_insert_combinations()
