@@ -4,6 +4,9 @@ from events_generator import generate_events, insert_events
 from genre_generator import insert_genres
 from review_generator import generate_reviews, insert_reviews
 from feedback_generator import generate_feedbacks, insert_feedbacks
+from order_generator import generate_orders, insert_orders
+from payment_generator import generate_payments, insert_payments
+from refund_generator import generate_refunds, insert_refunds
 
 
 
@@ -23,7 +26,7 @@ db_config = {
     'port': 26740, 
     'user': 'avnadmin',  # Replace with your Aiven username
     'password': 'AVNS_k8-EKEKB0de1fhIa09w',  # Replace with your Aiven password
-    'database': 'test_sprint'  # Replace with your database name
+    'database': 'sprint2'  # Replace with your database name
 }
 
 
@@ -80,8 +83,17 @@ def main():
         # Insert genres into the database
         insert_genres(cursor)
 
-        events = generate_events(organizers, 100)
+        # Generate events and insert events 
+        events = generate_events(organizers, NUM_EVENTS)
         insert_events(events, cursor, conn)
+
+        # Generate and insert orders, payments, and refunds
+        orders = generate_orders(events)
+        payments = generate_payments(orders)
+        refunds = generate_refunds(orders)
+        insert_payments(payments, cursor, conn)
+        insert_orders(orders, cursor, conn)
+        insert_refunds(refunds, cursor, conn)
 
         reviews = generate_reviews(events, 2)
         insert_reviews(reviews, cursor, conn)

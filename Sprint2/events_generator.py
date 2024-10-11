@@ -3,7 +3,6 @@ from faker import Faker
 from datetime import datetime, timedelta
 
 
-
 # Function to generate synthetic events
 def generate_events(organizers, num_events=100):
     print(f"Generating {num_events} synthetic events...")
@@ -20,11 +19,11 @@ def generate_events(organizers, num_events=100):
         event_date = fake.date_time_between(start_date=organizer['account_creation_time'], end_date='now')
 
         start_times = [
-            datetime.strptime("16:00", "%H:%M").time(),  # 4:00 PM
-            datetime.strptime("18:00", "%H:%M").time()   # 6:00 PM
+            datetime.strptime("15:00", "%H:%M").time(),  # 3:00 PM
+            datetime.strptime("17:00", "%H:%M").time()   # 5:00 PM
         ]
         end_times = [
-            datetime.strptime("17:00", "%H:%M").time(),  # 6:00 PM
+            datetime.strptime("18:00", "%H:%M").time(),  # 6:00 PM
             datetime.strptime("22:00", "%H:%M").time()   # 10:00 PM
         ]
 
@@ -43,7 +42,7 @@ def generate_events(organizers, num_events=100):
         }
         events.append(event)
     
-    genres = ['concert', 'sports', 'art, family & comedy', 'family']
+    genres = ['concert', 'sports', 'art, theatre & comedy', 'family']
 
     # Update events with real names
     for event in events:
