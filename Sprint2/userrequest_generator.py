@@ -73,7 +73,7 @@ db_config = {
     'port': 26740, 
     'user': 'avnadmin',  # Replace with your Aiven username
     'password': 'AVNS_k8-EKEKB0de1fhIa09w',  # Replace with your Aiven password
-    'database': 'Sprint2'  # Replace with your database name
+    'database': 'sprint2'  # Replace with your database name
 }
 
 # Connect to the database
@@ -98,4 +98,7 @@ def generate_and_insert_user_requests(num_requests=100):
     finally:
         cursor.close()
         conn.close()
+        print("Database connection closed.")
 
+if __name__ == "__main__":
+    generate_and_insert_user_requests(num_requests=100)
