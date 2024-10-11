@@ -1,6 +1,5 @@
 import random
 from faker import Faker
-import openai  # Ensure you have this import
 
 
 # Function to generate synthetic events
@@ -18,16 +17,8 @@ def generate_events(organizers, num_events=100):
         # Ensure the event date is after the organizer's account creation time
         event_date = fake.date_time_between(start_date=organizer['account_creation_time'], end_date='now')
 
-        # Generate event description using OpenAI
-        prompt = f"Generate a brief event description in 30 words."
-        response = openai.ChatCompletion.create(
-            model="gpt-4",  # or another model of your choice
-            messages=[
-                {"role": "user", "content": prompt}
-            ],
-            max_tokens=50  # Limit the response to approximately 50 tokens
-        )
-        event_description = response['choices'][0]['message']['content'].strip()
+        # Generate event description using Faker
+        event_description = fake.sentence(nb_words=50)  # Generate a brief description
 
         event = {
             'event_name': fake.catch_phrase(),
