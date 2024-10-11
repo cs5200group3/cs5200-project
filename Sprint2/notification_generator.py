@@ -67,13 +67,10 @@ def generate_notifications(valid_event_ids, num_notifications=100):
         # Random notification_content based on the notification_type_id
         notification_content = random.choice(notification_content_lists[notification_type_id])
         
-        # Generate a random datetime within the past year
-        notification_sent_time = datetime.now() - timedelta(days=random.randint(1, 365), 
-                                                           hours=random.randint(0, 23), 
-                                                           minutes=random.randint(0, 59))
+    
         
         # Append the generated notification tuple to the list
-        notifications.append((event_id, notification_type_id, notification_content, notification_sent_time))
+        notifications.append((event_id, notification_type_id, notification_content))
     
     return notifications
 
@@ -81,8 +78,8 @@ def generate_notifications(valid_event_ids, num_notifications=100):
 def insert_notifications(notifications, cursor, conn, batch_size=50):
     print("Inserting notifications into the database...")
     insert_query = """
-    INSERT INTO `Notification` (`event_id`, `notification_type_id`, `notification_content`, `notification_sent_time`)
-    VALUES (%s, %s, %s, %s)
+    INSERT INTO `Notification` (`event_id`, `notification_type_id`, `notification_content`)
+    VALUES (%s, %s, %s)
     """
     for i in range(0, len(notifications), batch_size):
         batch = notifications[i:i + batch_size]
