@@ -32,4 +32,4 @@ For detailed team roles, please refer to the Sprint 1 Executive Summary.
 
 ## ER Diagram
 
-Our database structure is visualized in an Entity-Relationship (ER) diagram, which can be viewed [here](https://drawdb.vercel.app/editor?shareId=f02d2f07e2235de2d056af4a950248de).
+Our database structure is visualized in an Entity-Relationship (ER) diagram, which can be viewed [here](https://drawdb.vercel.app/editor?shareId=d40e0a8af419f39a92ca4fb3a95cb3d1).
