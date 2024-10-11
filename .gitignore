@@ -64,6 +64,12 @@ node_modules/
 *.log
 .env
 .env.local
+
+# Ignore Python cache files
+__pycache__/
+
+# Ignore virtual environment directory
+myenv/
 EOT
 
 # Ignore the virtual environment
