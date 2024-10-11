@@ -2,14 +2,14 @@ import mysql.connector
 import random
 
 # Function to generate random number combinations of random length (1 to 4)
-def generate_random_combinations(num_records=450):
+def generate_random_combinations(NUM_USERS):
     combinations = []
-    for i in range(1, num_records + 1):
+    for i in range(1, NUM_USERS + 1):
         # Choose a random length for the combination (between 1 and 4)
         combination_length = random.randint(1, 4)
         random_combination = random.sample([1, 2, 3, 4], combination_length)
         for genre_id in random_combination:
-            combinations.append((i, genre_id))  # Tuple (user, genre_id)
+            combinations.append((i, genre_id)) 
     return combinations
 
 # Function to insert combinations into the database
@@ -55,7 +55,3 @@ def generate_and_insert_combinations():
     finally:
         cursor.close()
         conn.close()
-        print("Database connection closed.")
-
-if __name__ == "__main__":
-    generate_and_insert_combinations()
