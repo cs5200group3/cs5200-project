@@ -22,7 +22,6 @@ def generate_events(organizers, num_events=100):
 
         event_id = 1
         event = {
-            'event_id': event_id,
             'organizer': random.randint(451, 500),
             'event_name': fake.catch_phrase(),
             'event_date': event_date,
@@ -38,10 +37,33 @@ def generate_events(organizers, num_events=100):
     return events
 
 
-def insert_events(events, cursor, conn):
-    for event in events:
-        try:
-            cursor.execute("INSERT INTO Event (event_name, event_date, event_start_time, event_end_time, event_location, event_description, event_genre, total_tickets, organizer) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)", tuple(event.values()))
-        except Exception as e:
-            print(f"Error inserting event: {e}")  # Error handling
-    conn.commit()
+def insert_events(events, cursor, conn, batch_size=50):
+    print("Inserting events into the database...")
+    insert_query = """
+    INSERT INTO `Event` (
+        `organizer`, `event_name`, `event_date`, `event_start_time`, `event_end_time`, `event_location`, 
+        `event_description`, `event_genre`, `total_tickets`
+    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+    """
+    for i in range(0, len(events), batch_size):
+        batch = events[i:i + batch_size]
+        cursor.executemany(insert_query, [
+            (
+                event['organizer'],
+                event['event_name'],
+                event['event_date'],
+                event['event_start_time'],
+                event['event_end_time'],
+                event['event_location'],
+                event['event_description'],
+                event['event_genre'],
+                event['total_tickets']
+            ) for event in batch
+        ])
+        conn.commit()  # Commit after each batch
+        print(f"Inserted batch {i // batch_size + 1} successfully.")
+
+    print("All events inserted successfully.")
+
+
+
