@@ -65,3 +65,6 @@ node_modules/
 .env
 .env.local
 EOT
+
+# Ignore the virtual environment
+myenv/
