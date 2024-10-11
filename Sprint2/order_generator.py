@@ -8,22 +8,10 @@ def generate_orders(events, num_orders=10):
     fake = Faker()
     orders = []
     order_id = 1
-    # remaining_tickets = {event['event_id']: event['total_tickets'] for event in events}
     
     for i, event in enumerate(events):
         for _ in range(num_orders):
-            # Select a random event from the list
             event = random.choice(events)
-            # event_id = event['event_id']
-
-            # Ensure that there are tickets left to order for this event
-            # if remaining_tickets[event_id] <= 0:
-            #     continue  # Skip to the next iteration if no tickets are available for this event
-
-            # Generate a random number of tickets for the order, but ensure it does not exceed the remaining tickets
-            # tickets_ordered = random.randint(1, 40)
-            # remaining_tickets[event_id] -= tickets_ordered
-
             start_date = event['event_date'] - timedelta(days=30)
             ticket_type = random.choice(['VIP', 'General Admission'])
             

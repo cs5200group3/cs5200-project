@@ -1,7 +1,6 @@
 import mysql.connector
 import random
 from faker import Faker
-import order_generator
 REFUND_REASON = ['Not able to go to the event due to personal reasons',
                  'Not able to go to the event due to medical situation', 
                  'No specific reasons', 'Other']

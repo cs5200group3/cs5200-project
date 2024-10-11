@@ -1,15 +1,11 @@
 import mysql.connector
 import random
 from faker import Faker
-import order_generator
-
 
 def generate_payments(orders, num_items=10):
     print(f"Generating {num_items} payments...")
     fake = Faker()
     payments = []
-    # refunded depends on order_status in order_generator.py, if order_status is 'Refunded', then refunded = True
-    
 
     for order in orders:
         refunded = True if order['order_status'] == 'Refunded' else False
