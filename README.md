@@ -29,6 +29,10 @@ For detailed team roles, please refer to the Sprint 1 Executive Summary.
 - `/Sprint1`: Contains documentation for Sprint 1
   - `Executive summary_Roles_DiagramLink.md`: Executive summary, team roles, and ER diagram link
   - `Requirement Summary.md`: Detailed requirements based on user personas
+- `/Sprint2`: Contains deliverables for Sprint 2
+  - Report folder: image of ER diagram, report.md
+  - sql scripts folder: scripts for creating tables
+  - data_insert: python files for generating and inserting data
 
 ## ER Diagram
 
