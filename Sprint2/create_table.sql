@@ -81,11 +81,10 @@ CREATE TABLE `Order` (
 	`payment_id` INTEGER,
 	`user` INTEGER,
 	`order_time` DATETIME,
-	`order_total` DECIMAL,
+	`price` DECIMAL,
 	`order_status` ENUM('Confirmed', 'Refunded'),
 	`event_id` INTEGER,
 	`ticket_type` ENUM('General Admission', 'VIP'),
-	`current_price` DECIMAL,
 	PRIMARY KEY(`order_id`),
 	FOREIGN KEY(`user`) REFERENCES `Account`(`account_id`)
 		ON UPDATE NO ACTION ON DELETE NO ACTION,
