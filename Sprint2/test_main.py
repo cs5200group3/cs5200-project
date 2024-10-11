@@ -1,6 +1,8 @@
 import mysql.connector
 from account_generate import generate_accounts, insert_accounts
 from events_generator import generate_events, insert_events
+from genre_generator import insert_genres
+
 
 # Global configuration for account generation
 NUM_ORGANIZERS = 50
@@ -65,7 +67,10 @@ def main():
         synthetic_accounts = users + organizers + admins
 
         # Insert all accounts into the database
-        insert_accounts(synthetic_accounts, cursor, conn) 
+        insert_accounts(synthetic_accounts, cursor, conn)
+
+        # Insert genres into the database
+        insert_genres(cursor)
 
         events = generate_events(organizers, 100)
         insert_events(events, cursor, conn)
