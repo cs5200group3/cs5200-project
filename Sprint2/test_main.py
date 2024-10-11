@@ -2,6 +2,9 @@ import mysql.connector
 from account_generate import generate_accounts, insert_accounts
 from events_generator import generate_events, insert_events
 from genre_generator import insert_genres
+from review_generator import generate_reviews, insert_reviews
+from feedback_generator import generate_feedbacks, insert_feedbacks
+
 
 
 # Global configuration for account generation
@@ -14,7 +17,6 @@ NUM_ORDERS = 1000
 NUM_REVIEWS = 200
 NUM_REFUNTS = 50
 TABLE_LIST = ['Account', 'Genre', 'UserGenre', 'UserNotificationType', 'NotificationType', 'Event', 'Order', 'Payment', 'Notification', 'Feedback', 'Review', 'UserRequest', 'Refund']
-
 # Database connection configuration for Aiven MySQL
 db_config = {
     'host': 'g3-sprint2-just4thedreamland-5e30.h.aivencloud.com',  # Replace with your Aiven hostname
@@ -81,8 +83,10 @@ def main():
         events = generate_events(organizers, 100)
         insert_events(events, cursor, conn)
 
-        # users = generate_accounts(5, 'user')
-        # reviews = generate_reviews(events, 20)
+        reviews = generate_reviews(events, 2)
+        insert_reviews(reviews, cursor, conn)
+        feedbacks = generate_feedbacks(30)
+        insert_feedbacks(feedbacks, cursor, conn)
 
     finally:
         # Close the database connection
