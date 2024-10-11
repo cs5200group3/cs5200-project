@@ -4,11 +4,8 @@ from datetime import datetime, timedelta
 
 # Sample action types for requested_action
 requested_actions = [
-    "Change Password", 
-    "Delete Account", 
-    "Request Refund", 
-    "Update Email", 
-    "Upgrade Subscription"
+    "Activate", 
+    "Deactivate"
 ]
 
 # Sample reply messages
@@ -101,7 +98,4 @@ def generate_and_insert_user_requests(num_requests=100):
     finally:
         cursor.close()
         conn.close()
-        print("Database connection closed.")
 
-if __name__ == "__main__":
-    generate_and_insert_user_requests(num_requests=100)
