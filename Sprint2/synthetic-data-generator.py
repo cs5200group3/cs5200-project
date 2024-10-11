@@ -65,8 +65,7 @@ def main():
         users = generate_accounts(NUM_USERS, 'user')
         # Set inactive account status for 30 users
         for i in range(NUM_INACTIVE_USERS):
-            users[i]['account_status'] = 'Inactive'
-        
+            users[i]['account_status'] = 'Inactive'    
         # Generate organizers
         organizers = generate_accounts(NUM_ORGANIZERS, 'organizer')       
         # Generate admins
