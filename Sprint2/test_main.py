@@ -35,9 +35,15 @@ def connect_to_database():
 
 
 def clean_all_tables(cursor, table_list):
-    # drop all data in tables
+    # Disable foreign key checks
+    cursor.execute("SET FOREIGN_KEY_CHECKS = 0;")
+    
+    # Drop all data in tables
     for table in table_list:
         cursor.execute(f"DELETE FROM `{table}`")  # Escaped table name
+    
+    # Re-enable foreign key checks
+    cursor.execute("SET FOREIGN_KEY_CHECKS = 1;")
 
 
 def reset_indexes(cursor, table_list):
