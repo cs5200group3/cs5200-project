@@ -32,5 +32,13 @@ def generate_events(organizers, num_events=100):
             'organizer': random.randint(451, 500) 
         }
         events.append(event)
-    
     return events
+
+
+def insert_events(events, cursor, conn):
+    for event in events:
+        try:
+            cursor.execute("INSERT INTO Event (event_name, event_date, event_start_time, event_end_time, event_location, event_description, event_genre, total_tickets, organizer) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)", tuple(event.values()))
+        except Exception as e:
+            print(f"Error inserting event: {e}")  # Error handling
+    conn.commit()

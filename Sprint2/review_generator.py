@@ -30,6 +30,7 @@ def generate_reviews(events, num_reviews=1000):
         for _ in range(num_reviews):
             rating = random.randint(1, 5)
             review_content = generate_review_content(event['event_name'], rating)
+            review_status = 'Approved' if random.random() < 0.9 else random.choice(['Flagged', 'Rejected'])
 
             review = {
                 'event_id': (i + 1),
@@ -37,7 +38,7 @@ def generate_reviews(events, num_reviews=1000):
                 'user': random.randint(1, 450),
                 'review_content': review_content,
                 'review_date': fake.date_time_this_year(),
-                'review_status': random.choice(['Flagged', 'Approved', 'Rejected']),
+                'review_status': review_status,
                 'admin': admin_id,
                 'flagged': random.choice([True, False]),
             }
@@ -52,4 +53,3 @@ users = generate_accounts(5, 'user')
 print(events)
 reviews = generate_reviews(events, 20)
 print(reviews)
-

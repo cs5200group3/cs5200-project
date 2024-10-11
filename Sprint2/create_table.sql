@@ -1,4 +1,3 @@
-
 CREATE TABLE `Account` (
 	`account_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
 	`account_type` ENUM('user', 'organizer', 'admin'),
@@ -130,14 +129,10 @@ CREATE TABLE `Review` (
 
 CREATE TABLE `Feedback` (
 	`feedback_id` INTEGER NOT NULL AUTO_INCREMENT UNIQUE,
-	`organizer` INTEGER,
 	`review_id` INTEGER,
 	`feedback_content` TEXT(65535),
 	PRIMARY KEY(`feedback_id`),
-	FOREIGN KEY(`organizer`) REFERENCES `Account`(`account_id`)
-		ON UPDATE NO ACTION ON DELETE NO ACTION,
-	FOREIGN KEY(`review_id`) REFERENCES `Review`(`review_id`)
-		ON UPDATE NO ACTION ON DELETE NO ACTION
+	FOREIGN KEY(`review_id`) REFERENCES `Review`(`review_id`) ON UPDATE NO ACTION ON DELETE NO ACTION
 );
 
 CREATE TABLE `Refund` (
@@ -149,8 +144,6 @@ CREATE TABLE `Refund` (
 	PRIMARY KEY(`refund_id`),
 	FOREIGN KEY(`payment_id`) REFERENCES `Payment`(`payment_id`)
 		ON UPDATE NO ACTION ON DELETE NO ACTION,  -- No cascade for payment
-	FOREIGN KEY(`order_id`) REFERENCES `Order`(`order_id`)
-		ON UPDATE NO ACTION ON DELETE NO ACTION,  -- No cascade for order
 	FOREIGN KEY(`admin`) REFERENCES `Account`(`account_id`)
 		ON UPDATE NO ACTION ON DELETE NO ACTION  -- No cascade for admin
 );
