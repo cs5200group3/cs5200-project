@@ -52,20 +52,10 @@ Total Won't Have Points: 21
 
 Given the velocity of 35 points, here's a proposed selection of user stories for Sprint 3 that balances priority and feasibility:
 
-1. Event creation by organizers (5 pts) - Must Have
-2. View event details (3 pts) - Must Have
-3. Basic event search (8 pts) - Must Have
-4. Create ticket types (8 pts) - Should Have
-5. Update ticket availability (5 pts) - Should Have
-6. Purchase confirmation emails (3 pts) - Should Have
-7. Update profile information (2 pts) - Should Have
-
-Total Sprint Points: 34 (within 35-point velocity)
-
-## Rationale for Sprint 3 Selection:
-1. Focuses on core event management and ticket functionality
-2. Builds essential features for both organizers and users
-3. Includes critical user-facing features
-4. Maintains a balanced workload within velocity limits
-5. Prioritizes "Must Have" items while including important "Should Have" features
-6. Creates a foundation for future sprints
+user:
+As a user, I want to log in to my account using my username or email and password so that I can manage my profile and access personalized features. (Story Points: 3)
+I want to search for events based on categories or dates so that I can find events that interest me. (Story Points: 8)
+I want to view event details, including description, date, location, and ticket types, so that I can decide if I want to attend. (Story Points: 3)
+I want to purchase tickets for an event by selecting the ticket type and quantity so that I can secure my spot. (Story Points: 13) (we should seperate the ticket from orders)
+I want to view the status of my payment (completed or failed) so that I know if my purchase was successful. (Story Points: 3)
+I want to request a refund if I can no longer attend an event so that I can get my money back according to the event's refund policy. (Story Points: 8)
