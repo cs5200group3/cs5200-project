@@ -57,4 +57,6 @@ Given the velocity of 35 points, here's a proposed selection of user stories for
 - I want to view event details, including description, date, location, and ticket types, so that I can decide if I want to attend. (Story Points: 3)
 - I want to purchase tickets for an event by selecting the ticket type and quantity so that I can secure my spot. (Story Points: 13) (we should seperate the ticket from orders)
 -I want to view the status of my payment (completed or failed) so that I know if my purchase was successful. (Story Points: 3)
--I want to request a refund if I can no longer attend an event so that I can get my money back according to the event's refund policy. (Story Points: 8)
+- I want to reset my password if I forget it, so I can regain access to my account without losing my data. (Story Points: 2)
+- I want to update my profile information, such as my name, email, and phone number, so that my contact information is current. (Story Points: 2)
+- I want to specify my notification preferences so that I receive relevant updates and alerts based on my interests. (Story Points: 3)
