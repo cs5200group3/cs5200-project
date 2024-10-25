@@ -55,7 +55,7 @@ db_config = {
     'port': 26740, 
     'user': 'avnadmin',  # Replace with your Aiven username
     'password': 'AVNS_k8-EKEKB0de1fhIa09w',  # Replace with your Aiven password
-    'database': 'sprint2'  # Replace with your database name
+    'database': 'sprint3'  # Replace with your database name
 }
 
 # Connect to the database

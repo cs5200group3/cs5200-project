@@ -9,6 +9,10 @@ from payment_generator import generate_payments, insert_payments
 from refund_generator import generate_refunds, insert_refunds
 from orderticket_generator import generate_ordertickets, insert_ordertickets
 from tickets_generator import generate_tickets, insert_tickets
+from usergenre_generator import generate_random_combinations, insert_combinations
+from userrequest_generator import generate_user_requests, insert_user_requests
+from notification_generator import generate_notifications, insert_notifications, fetch_valid_event_ids
+from notificationtype_generator import insert_notificationType
 
 
 # Global configuration for account generation
@@ -20,6 +24,8 @@ NUM_EVENTS = 100
 NUM_ORDERS = 1000
 NUM_REVIEWS = 200
 NUM_REFUNTS = 50
+NUM_USER_REQUESTS = 100
+NUM_NOTIFICATIONS = 100
 TABLE_LIST = ['Account', 'Genre', 'UserGenre', 'UserNotificationType', 'NotificationType', 'Event', 'Order', 'Payment', 'Notification', 'Feedback', 'Review', 'UserRequest', 'Refund', 'Ticket', 'OrderTicket']
 # Database connection configuration for Aiven MySQL
 db_config = {
@@ -108,6 +114,19 @@ def main():
         insert_reviews(reviews, cursor, conn)
         feedbacks = generate_feedbacks(30)
         insert_feedbacks(feedbacks, cursor, conn)
+
+        usergenres = generate_random_combinations(NUM_USERS)
+        insert_combinations(usergenres, cursor, conn)
+
+        userrequests = generate_user_requests(NUM_USER_REQUESTS)
+        insert_user_requests(userrequests, cursor, conn)
+
+        insert_notificationType(cursor)
+        valid_event_ids = fetch_valid_event_ids(cursor)
+        notifications = generate_notifications(valid_event_ids, NUM_NOTIFICATIONS)
+        insert_notifications(notifications, cursor, conn)
+
+        
 
     finally:
         # Close the database connection

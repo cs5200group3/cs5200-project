@@ -67,8 +67,6 @@ def generate_notifications(valid_event_ids, num_notifications=100):
         # Random notification_content based on the notification_type_id
         notification_content = random.choice(notification_content_lists[notification_type_id])
         
-    
-        
         # Append the generated notification tuple to the list
         notifications.append((event_id, notification_type_id, notification_content))
     
@@ -86,22 +84,22 @@ def insert_notifications(notifications, cursor, conn, batch_size=50):
         cursor.executemany(insert_query, batch)
         conn.commit()  # Commit the transaction after each batch
 
-# Database connection configuration (adjust these parameters)
-db_config = {
-    'host': 'g3-sprint2-just4thedreamland-5e30.h.aivencloud.com',  # Replace with your Aiven hostname
-    'port': 26740, 
-    'user': 'avnadmin',  # Replace with your Aiven username
-    'password': 'AVNS_k8-EKEKB0de1fhIa09w',  # Replace with your Aiven password
-    'database': 'sprint2'  # Replace with your database name
-}
+# # Database connection configuration (adjust these parameters)
+# db_config = {
+#     'host': 'g3-sprint2-just4thedreamland-5e30.h.aivencloud.com',  # Replace with your Aiven hostname
+#     'port': 26740, 
+#     'user': 'avnadmin',  # Replace with your Aiven username
+#     'password': 'AVNS_k8-EKEKB0de1fhIa09w',  # Replace with your Aiven password
+#     'database': 'sprint3'  # Replace with your database name
+# }
 
-# Connect to the database
-def connect_to_database():
-    print("Connecting to the database...")
-    conn = mysql.connector.connect(**db_config)
-    cursor = conn.cursor()
-    print("Database connection established.")
-    return conn, cursor
+# # Connect to the database
+# def connect_to_database():
+#     print("Connecting to the database...")
+#     conn = mysql.connector.connect(**db_config)
+#     cursor = conn.cursor()
+#     print("Database connection established.")
+#     return conn, cursor
 
 # Fetch valid event_ids from the Event table
 def fetch_valid_event_ids(cursor):
@@ -109,24 +107,24 @@ def fetch_valid_event_ids(cursor):
     result = cursor.fetchall()
     return [row[0] for row in result]
 
-# Main function to generate and insert notifications
-def generate_and_insert_notifications(num_notifications=100):
-    conn, cursor = connect_to_database()
-    try:
-        # Fetch valid event_ids
-        valid_event_ids = fetch_valid_event_ids(cursor)
+# # Main function to generate and insert notifications
+# def generate_and_insert_notifications(num_notifications=100):
+#     conn, cursor = connect_to_database()
+#     try:
+#         # Fetch valid event_ids
+#         valid_event_ids = fetch_valid_event_ids(cursor)
         
-        # Generate the random notifications
-        notifications = generate_notifications(valid_event_ids, num_notifications=num_notifications)
+#         # Generate the random notifications
+#         notifications = generate_notifications(valid_event_ids, num_notifications=num_notifications)
         
-        # Insert the notifications into the database
-        insert_notifications(notifications, cursor, conn)
+#         # Insert the notifications into the database
+#         insert_notifications(notifications, cursor, conn)
         
-        print("Data insertion complete.")
-    finally:
-        cursor.close()
-        conn.close()
-        print("Database connection closed.")
+#         print("Data insertion complete.")
+#     finally:
+#         cursor.close()
+#         conn.close()
+#         print("Database connection closed.")
 
-if __name__ == "__main__":
-    generate_and_insert_notifications(num_notifications=100)
+# if __name__ == "__main__":
+#     generate_and_insert_notifications(num_notifications=100)
