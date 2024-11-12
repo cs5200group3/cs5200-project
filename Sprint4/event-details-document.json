@@ -6,11 +6,6 @@
     "name": "Sample Artist",
     "bio": "Artist biography goes here",
     "image": "https://example.com/artist-image.jpg",
-    "socialMedia": {
-      "facebook": "https://facebook.com/artistpage",
-      "twitter": "https://twitter.com/artisthandle",
-      "instagram": "https://instagram.com/artistprofile"
-    },
     "website": "https://artist-website.com",
     "wikipediaLink": "https://wikipedia.org/wiki/Artist_Name"
   },
