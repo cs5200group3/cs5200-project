@@ -1,0 +1,353 @@
+[
+    {
+        "sql_event_id": "3",
+        "performer": {
+            "type": "Solo",
+            "name": "Hozier",
+            "masterpiece": "\"Take Me to Church\"",
+            "bio": "Hozier, born Andrew Hozier-Byrne in 1990, is an Irish singer-songwriter known for his powerful voice and emotive lyrics. He rose to international fame with the release of his debut single \"Take Me to Church\" in 2013, which critiques societal norms and celebrates love and identity. Hozier's music blends elements of folk, blues, and rock, drawing influence from various genres and cultural backgrounds. His debut album, released in 2014, was critically acclaimed and showcased his talent for storytelling through song. Hozier's sophomore album, \"Wasteland, Baby!\" debuted at number one on the Billboard 200 in 2019, further establishing his place in contemporary music.",
+            "website": "[www.hozier.com](http://www.hozier.com)",
+            "wikipediaLink": "[https://en.wikipedia.org/wiki/Hozier](https://en.wikipedia.org/wiki/Hozier)"
+        },
+        "images": "https://images.unsplash.com/photo-1688412062361-583408dc928c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2NjB8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "7",
+        "performer": {
+            "type": "band",
+            "name": "The Beatles",
+            "masterpiece": "Abbey Road",
+            "bio": "The Beatles were an English rock band formed in Liverpool in 1960, consisting of John Lennon, Paul McCartney, George Harrison, and Ringo Starr. They are widely regarded as one of the most influential acts of the 20th century, known for their innovative songwriting, pioneering recording techniques, and cultural impact. Their music incorporated various styles, including rock, pop, and psychedelia, which helped shape modern music.",
+            "website": "www.thebeatles.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/The_Beatles"
+        },
+        "images": "https://images.unsplash.com/photo-1553194731-e7253cd148d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2NjN8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "10",
+        "performer": {
+            "type": "Band",
+            "name": "The Beatles",
+            "masterpiece": "Sgt. Pepper's Lonely Hearts Club Band",
+            "bio": "The Beatles were an English rock band formed in Liverpool in 1960, consisting of John Lennon, Paul McCartney, George Harrison, and Ringo Starr. They are widely regarded as one of the most influential music groups in history, known for their innovative approaches to music and culture during the 1960s. Their work transcended musical boundaries and continues to influence artists across genres.",
+            "website": "www.thebeatles.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/The_Beatles"
+        },
+        "images": "https://images.unsplash.com/photo-1537228783107-df09e892bdbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2NjZ8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "12",
+        "performer": {
+            "type": "band",
+            "name": "The Beatles",
+            "masterpiece": "Abbey Road",
+            "bio": "The Beatles were an iconic English rock band formed in Liverpool in 1960, consisting of John Lennon, Paul McCartney, George Harrison, and Ringo Starr. They are widely regarded as one of the most influential musical acts of all time, known for their innovative songwriting, harmonious vocals, and groundbreaking studio techniques. Their music spanned various genres, and they played a pivotal role in the cultural revolution of the 1960s.",
+            "website": "www.thebeatles.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/The_Beatles"
+        },
+        "images": "https://images.unsplash.com/photo-1710376077321-a9df5969c840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2Njl8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "16",
+        "performer": {
+            "type": "band",
+            "name": "The Beatles",
+            "masterpiece": "Abbey Road",
+            "bio": "The Beatles were an iconic British rock band formed in Liverpool in 1960. They consisted of John Lennon, Paul McCartney, George Harrison, and Ringo Starr. Widely regarded as one of the most influential bands in the history of music, their innovative songwriting, pioneering studio techniques, and cultural impact revolutionized the music landscape of the 20th century. Their diverse discography spans various styles and genres, making them a timeless symbol of creativity and artistic expression.",
+            "website": "www.thebeatles.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/The_Beatles"
+        },
+        "images": "https://images.unsplash.com/photo-1504871283652-485177543d73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2NzF8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "19",
+        "performer": {
+            "type": "solo",
+            "name": "Adele",
+            "masterpiece": "21",
+            "bio": "Adele Laurie Blue Adkins, known professionally as Adele, is an English singer and songwriter who gained worldwide fame with her soulful voice and emotive ballads. Bursting onto the music scene in the late 2000s, she quickly established herself as one of the industry's leading figures with her debut album, \"19,\" followed by the monumental success of her second album, \"21,\" which won multiple Grammy Awards and features hits like \"Rolling in the Deep\" and \"Someone Like You.\" Adele is celebrated for her powerful vocal presence and her ability to connect with audiences through her heartfelt lyrics.",
+            "website": "www.adele.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/Adele"
+        },
+        "images": "https://images.unsplash.com/photo-1682343712259-d3f5fa95ee22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2NzR8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "20",
+        "performer": {
+            "type": "band",
+            "name": "The Beatles",
+            "masterpiece": "Sgt. Pepper's Lonely Hearts Club Band",
+            "bio": "The Beatles were an iconic British rock band formed in Liverpool in 1960, consisting of John Lennon, Paul McCartney, George Harrison, and Ringo Starr. Their innovative music and cultural impact made them one of the most influential acts in the history of popular music. They are known for pioneering various musical styles and studio techniques, and they played a significant role in the rise of counterculture in the 1960s.",
+            "website": "[www.thebeatles.com](http://www.thebeatles.com)",
+            "wikipediaLink": "[https://en.wikipedia.org/wiki/The_Beatles](https://en.wikipedia.org/wiki/The_Beatles)"
+        },
+        "images": "https://images.unsplash.com/photo-1537228783107-df09e892bdbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2NzZ8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "24",
+        "performer": {
+            "type": "Solo",
+            "name": "Hozier",
+            "masterpiece": "\"Take Me to Church\"",
+            "bio": "Hozier, an Irish musician and songwriter, rose to fame with his debut single \"Take Me to Church,\" which garnered widespread acclaim for its poignant lyrics and soulful sound. Born Andrew Hozier-Byrne in Bray, County Wicklow, he was influenced by blues, rock, and folk music from an early age. His self-titled debut album, released in 2014, showcases his unique blend of genres and profound storytelling. Hozier's music often explores themes of love, religion, and social issues, earning him a dedicated fan base and critical recognition.",
+            "website": "[www.hozier.com](http://www.hozier.com)",
+            "wikipediaLink": "[https://en.wikipedia.org/wiki/Hozier](https://en.wikipedia.org/wiki/Hozier)"
+        },
+        "images": "https://images.unsplash.com/photo-1722841548895-73f301e9ef32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2Nzl8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "27",
+        "performer": {
+            "type": "band",
+            "name": "The Beatles",
+            "masterpiece": "Sgt. Pepper's Lonely Hearts Club Band",
+            "bio": "The Beatles were an iconic British rock band formed in Liverpool in 1960, comprised of John Lennon, Paul McCartney, George Harrison, and Ringo Starr. They are widely regarded as one of the most influential bands in music history, pioneering new musical styles and cultural phenomena in the 1960s and beyond. Their innovative songwriting, vocal harmonies, and studio experimentation set new standards for popular music.",
+            "website": "www.thebeatles.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/The_Beatles"
+        },
+        "images": "https://images.unsplash.com/photo-1703510576844-1047a6ed1fc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2ODF8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "28",
+        "performer": {
+            "type": "band",
+            "name": "Coldplay",
+            "masterpiece": "\"A Rush of Blood to the Head\"",
+            "bio": "Coldplay is a British rock band formed in 1996, consisting of members Chris Martin, Jonny Buckland, Guy Berryman, and Will Champion. They gained worldwide fame for their emotive sound and introspective lyrics, blending elements of alternative rock, pop, and orchestral music. Over the years, they have released multiple critically acclaimed albums and numerous chart-topping singles, earning numerous awards, including several Grammy Awards.",
+            "website": "[www.coldplay.com](http://www.coldplay.com)",
+            "wikipediaLink": "[https://en.wikipedia.org/wiki/Coldplay](https://en.wikipedia.org/wiki/Coldplay)"
+        },
+        "images": "https://images.unsplash.com/photo-1699802703781-49071d3590a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2ODR8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "31",
+        "performer": {
+            "type": "Solo",
+            "name": "Taylor Swift",
+            "masterpiece": "\"Folklore\"",
+            "bio": "Taylor Swift is an American singer-songwriter known for her narrative songwriting and versatility across genres. She began her career in country music and quickly transitioned to pop, achieving global fame with hits like \"Love Story\" and \"Shake It Off.\" With numerous awards including multiple Grammy Awards, Swift is celebrated for her ability to connect with fans through her introspective lyrics and personal storytelling. Her album \"Folklore,\" released in 2020, showcased her indie-folk and alternative style, earning critical acclaim and commercial success.",
+            "website": "www.taylorswift.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/Taylor_Swift"
+        },
+        "images": "https://images.unsplash.com/photo-1537228783107-df09e892bdbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2ODd8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "34",
+        "performer": {
+            "type": "band",
+            "name": "The Beatles",
+            "masterpiece": "Sgt. Pepper's Lonely Hearts Club Band",
+            "bio": "The Beatles were an English rock band formed in Liverpool in 1960, consisting of John Lennon, Paul McCartney, George Harrison, and Ringo Starr. Widely regarded as one of the most influential bands in the history of music, they are known for their innovative songwriting, groundbreaking studio techniques, and cultural impact. Their music evolved from pop and rock 'n' roll to more complex genres, making them timeless icons of modern music.",
+            "website": "https://www.thebeatles.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/The_Beatles"
+        },
+        "images": "https://images.unsplash.com/photo-1688981935578-ff26246327c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2OTB8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "35",
+        "performer": {
+            "type": "solo",
+            "name": "Adele",
+            "masterpiece": "21",
+            "bio": "Adele is a British singer-songwriter known for her powerful voice and emotive ballads. She gained international fame with her second album, \"21,\" which features hits like \"Rolling in the Deep\" and \"Someone Like You.\" Adele has won numerous awards, including multiple Grammy Awards and an Academy Award. Her music often explores themes of heartbreak and resilience, resonating with a wide audience.",
+            "website": "www.adele.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/Adele"
+        },
+        "images": "https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2OTJ8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "37",
+        "performer": {
+            "type": "Solo",
+            "name": "Hozier",
+            "masterpiece": "\"Take Me to Church\"",
+            "bio": "Hozier is an Irish singer-songwriter who gained international fame with his debut single, \"Take Me to Church,\" which was released in 2013. Born Andrew Hozier-Byrne, he blends soulful vocals with powerful lyrics that explore themes of love, religion, and social justice. His self-titled debut album was released in 2014 and received critical acclaim, establishing him as a prominent figure in the indie rock genre. Hozier's music is characterized by his unique voice and fusion of blues, folk, and rock influences.",
+            "website": "[www.hozier.com](http://www.hozier.com)",
+            "wikipediaLink": "[https://en.wikipedia.org/wiki/Hozier](https://en.wikipedia.org/wiki/Hozier)"
+        },
+        "images": "https://images.unsplash.com/photo-1504871283652-485177543d73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2OTR8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "45",
+        "performer": {
+            "type": "Solo",
+            "name": "Adele",
+            "masterpiece": "\"21\"",
+            "bio": "Adele is an English singer-songwriter known for her powerful voice and emotive ballads. She rose to fame with her debut album \"19\" in 2008, but it was her sophomore release \"21\" in 2011 that propelled her into global superstardom, featuring hits like \"Rolling in the Deep\" and \"Someone Like You.\" She is celebrated for her soulful, heartfelt music and has won numerous awards, including multiple Grammy Awards. Adele's work is characterized by themes of heartbreak, self-acceptance, and resilience.",
+            "website": "www.adele.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/Adele"
+        },
+        "images": "https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2OTd8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "46",
+        "performer": {
+            "type": "Solo",
+            "name": "Hozier",
+            "masterpiece": "\"Take Me to Church\"",
+            "bio": "Hozier, an Irish singer-songwriter, gained international acclaim with his debut single \"Take Me to Church,\" which critiques societal norms and celebrates love and individuality. His unique blend of indie, blues, and folk influences, combined with poetic lyrics, has earned him a dedicated following. He released his self-titled album in 2014, which showcased his distinctive voice and songwriting prowess, and has since continued to produce impactful music that resonates with audiences worldwide.",
+            "website": "[hozier.com](https://hozier.com)",
+            "wikipediaLink": "[https://en.wikipedia.org/wiki/Hozier](https://en.wikipedia.org/wiki/Hozier)"
+        },
+        "images": "https://images.unsplash.com/photo-1503499746616-a6d202989535?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI2OTl8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "49",
+        "performer": {
+            "type": "band",
+            "name": "Coldplay",
+            "masterpiece": "\"A Rush of Blood to the Head\"",
+            "bio": "Coldplay is a British rock band formed in 1996, consisting of Chris Martin, Jonny Buckland, Guy Berryman, and Will Champion. The band achieved worldwide fame with their melancholic sound, blending elements of alternative rock and pop. Coldplay's music often features emotional lyrics and sweeping melodies. They have garnered multiple Grammy Awards and are known for their innovative live performances.",
+            "website": "[coldplay.com](https://www.coldplay.com)",
+            "wikipediaLink": "[https://en.wikipedia.org/wiki/Coldplay](https://en.wikipedia.org/wiki/Coldplay)"
+        },
+        "images": "https://images.unsplash.com/photo-1474899310722-cb9b0f84bb91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI3MDZ8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "51",
+        "performer": {
+            "type": "solo",
+            "name": "Hozier",
+            "masterpiece": "\"Take Me to Church\"",
+            "bio": "Hozier, an Irish singer-songwriter, rose to international fame with his debut single \"Take Me to Church,\" which critiques societal norms and celebrates love in its many forms. Born in 1990 in Bray, County Wicklow, he began writing music at a young age, blending elements of folk, indie rock, and blues. His self-titled debut album, released in 2014, showcased his powerful vocals and poetic lyrics, earning him Grammy nominations and a dedicated fan base. Hozier's music often explores themes of love, spirituality, and social issues, reflecting his deep literary influences.",
+            "website": "[hozier.com](http://hozier.com)",
+            "wikipediaLink": "[Hozier - Wikipedia](https://en.wikipedia.org/wiki/Hozier)"
+        },
+        "images": "https://images.unsplash.com/photo-1672841284521-902007897fe8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI3MDl8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "55",
+        "performer": {
+            "type": "band",
+            "name": "The Beatles",
+            "masterpiece": "Abbey Road",
+            "bio": "The Beatles were an English rock band formed in Liverpool in 1960, consisting of John Lennon, Paul McCartney, George Harrison, and Ringo Starr. They are widely regarded as one of the most influential bands in the history of music, known for their innovative songwriting, diverse musical styles, and cultural impact, which helped shape the 1960s and pop music as we know it today. Their discography includes numerous groundbreaking albums and hits, with \"Abbey Road\" often cited as one of their greatest works.",
+            "website": "www.thebeatles.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/The_Beatles"
+        },
+        "images": "https://images.unsplash.com/photo-1522158637959-30385a09e0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI3MTF8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "65",
+        "performer": {
+            "type": "Solo",
+            "name": "Hozier",
+            "masterpiece": "Take Me to Church",
+            "bio": "Hozier, an Irish singer-songwriter, gained international acclaim with his debut single \"Take Me to Church,\" released in 2013. His music blends elements of indie rock, folk, and soul, often exploring themes of love, religion, and social justice. Hozier's powerful vocals and poetic lyrics have resonated with audiences worldwide, earning him numerous accolades and a dedicated fanbase. His self-titled debut album features a mix of soulful ballads and rhythmic anthems, solidifying his place in contemporary music.",
+            "website": "[www.hozier.com](http://www.hozier.com)",
+            "wikipediaLink": "[https://en.wikipedia.org/wiki/Hozier](https://en.wikipedia.org/wiki/Hozier)"
+        },
+        "images": "https://images.unsplash.com/photo-1722841772730-9ac3da704c0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI3MTN8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "69",
+        "performer": {
+            "type": "band",
+            "name": "The Beatles",
+            "masterpiece": "Sgt. Pepper's Lonely Hearts Club Band",
+            "bio": "The Beatles were a British rock band formed in Liverpool in 1960, consisting of John Lennon, Paul McCartney, George Harrison, and Ringo Starr. They are widely regarded as one of the most influential music groups in history, known for their innovative approach to music, pioneering studio techniques, and embracing various genres. Their work transcended music, influencing culture and society during the 1960s and beyond.",
+            "website": "www.thebeatles.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/The_Beatles"
+        },
+        "images": "https://images.unsplash.com/photo-1690991114897-7dc74a822372?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI3MTZ8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "78",
+        "performer": {
+            "type": "band",
+            "name": "The Beatles",
+            "masterpiece": "Abbey Road",
+            "bio": "The Beatles were an English rock band formed in Liverpool in 1960. They are widely regarded as one of the most influential bands in the history of music, known for their innovative songwriting, harmonies, and cultural impact. The group consisted of John Lennon, Paul McCartney, George Harrison, and Ringo Starr. They transformed popular music with their groundbreaking albums and songs, leading to a global phenomenon known as Beatlemania. Their experimentation with studio techniques and diverse musical styles set the groundwork for modern music.",
+            "website": "www.thebeatles.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/The_Beatles"
+        },
+        "images": "https://images.unsplash.com/photo-1677344298102-217afc18c013?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI3MjB8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "80",
+        "performer": {
+            "type": "solo",
+            "name": "Taylor Swift",
+            "masterpiece": "\"Folklore\"",
+            "bio": "Taylor Swift is an American singer-songwriter known for her narrative songwriting and versatile musical style, which spans country, pop, alternative, and indie genres. She began her career in country music before transitioning to pop superstardom with hits like \"Love Story\" and \"Shake It Off.\" Over the years, she has received numerous awards, including multiple Grammy Awards, and is recognized for her ability to connect with fans through deeply personal lyrics. Swift often explores themes of love, heartbreak, and self-discovery in her music, making her one of the most influential artists of her generation.",
+            "website": "[www.taylorswift.com](https://www.taylorswift.com)",
+            "wikipediaLink": "[https://en.wikipedia.org/wiki/Taylor_Swift](https://en.wikipedia.org/wiki/Taylor_Swift)"
+        },
+        "images": "https://images.unsplash.com/photo-1522776302589-df9907421c44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI3MjN8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "91",
+        "performer": {
+            "type": "Solo",
+            "name": "Adele",
+            "masterpiece": "21",
+            "bio": "Born on May 5, 1988, in Tottenham, London, Adele Laurie Blue Adkins, known simply as Adele, is a British singer-songwriter renowned for her powerful voice and emotive ballads. She rose to fame with her debut album \"19,\" but her sophomore effort \"21\" catapulted her to international stardom, earning multiple Grammy Awards and breaking sales records. Adele's music often explores themes of heartbreak and personal growth, and she is celebrated for her authenticity and vocal prowess.",
+            "website": "www.adele.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/Adele"
+        },
+        "images": "https://images.unsplash.com/photo-1522158637959-30385a09e0da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI3MjZ8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "93",
+        "performer": {
+            "type": "Solo",
+            "name": "Taylor Swift",
+            "masterpiece": "\"Folklore\"",
+            "bio": "Taylor Swift is an American singer-songwriter known for her narrative songwriting that often draws from her personal life. She first gained fame in the country music genre before successfully transitioning to pop and alternative styles. With numerous awards, including multiple Grammys, Swift has established herself as one of the most influential artists of her generation. Her ability to reinvent her sound and image while maintaining a deep connection with her audience has earned her a dedicated fan base worldwide.",
+            "website": "[www.taylorswift.com](http://www.taylorswift.com)",
+            "wikipediaLink": "[https://en.wikipedia.org/wiki/Taylor_Swift](https://en.wikipedia.org/wiki/Taylor_Swift)"
+        },
+        "images": "https://images.unsplash.com/photo-1596999806321-32b4d6f0151d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI3Mjl8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "97",
+        "performer": {
+            "type": "Solo",
+            "name": "Taylor Swift",
+            "masterpiece": "\"Fearless\"",
+            "bio": "Taylor Swift is an American singer-songwriter known for her narrative songwriting and genre versatility, ranging from country to pop and indie folk. She began her career at a young age and quickly gained fame with her self-titled debut album, but her breakthrough came with \"Fearless,\" which won several Grammy Awards. Over the years, Swift has become one of the most influential artists in music, renowned for her ability to connect with audiences through personal storytelling and her reinventions within the music industry.",
+            "website": "[www.taylorswift.com](http://www.taylorswift.com)",
+            "wikipediaLink": "[https://en.wikipedia.org/wiki/Taylor_Swift](https://en.wikipedia.org/wiki/Taylor_Swift)"
+        },
+        "images": "https://images.unsplash.com/photo-1522327646852-4e28586a40dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI3MzF8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": "98",
+        "performer": {
+            "type": "band",
+            "name": "The Beatles",
+            "masterpiece": "Abbey Road",
+            "bio": "The Beatles were an English rock band formed in Liverpool in 1960, comprising John Lennon, Paul McCartney, George Harrison, and Ringo Starr. They are widely regarded as one of the most influential bands in the history of music, known for their innovative songwriting, harmonies, and cultural impact. Their music evolved from early rock and pop to complex and experimental forms, leading to groundbreaking albums that reshaped the music industry.",
+            "website": "www.thebeatles.com",
+            "wikipediaLink": "https://en.wikipedia.org/wiki/The_Beatles"
+        },
+        "images": "https://images.unsplash.com/photo-1702996788591-8197e0c8657e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTI3MzV8&ixlib=rb-4.0.3&q=80&w=1080",
+        "last_updated": "2024-11-12"
+    }
+]

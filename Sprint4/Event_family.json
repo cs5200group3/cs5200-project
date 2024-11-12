@@ -1,0 +1,327 @@
+[
+    {
+        "sql_event_id": 1,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "The Singing Pirates",
+            "bio": "Join the Singing Pirates on an adventure filled with songs and treasure hunts.",
+            "website": "https://the-singing-pirates.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/The_Singing_Pirates"
+        },
+        "images": "https://drive.google.com/file/d/1aqVs23qhQMgSpnH4jJyky3SBue0-uVaN/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 4,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "The Wonder Clowns",
+            "bio": "A delightful family show featuring clowns, magic, and laughs for all ages.",
+            "website": "https://the-wonder-clowns.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/The_Wonder_Clowns"
+        },
+        "images": "https://drive.google.com/file/d/1JQzOgsenos9p3y6NAjmw0kCFre-24J__/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 5,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Nature Explorers",
+            "bio": "Interactive family event focusing on learning about wildlife and nature conservation.",
+            "website": "https://nature-explorers.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Nature_Explorers"
+        },
+        "images": "https://drive.google.com/file/d/10hoaMX6jXS09UCwXSw6we0Wuzg5TSsRS/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 9,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Dance of the Elements",
+            "bio": "A stunning performance combining dance, music, and light effects for a magical experience.",
+            "website": "https://dance-of-the-elements.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Dance_of_the_Elements"
+        },
+        "images": "https://drive.google.com/file/d/10V2IbkMJtgueQTzpCOgVZdD8wQpbP4GY/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 14,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Dance of the Elements",
+            "bio": "A stunning performance combining dance, music, and light effects for a magical experience.",
+            "website": "https://dance-of-the-elements.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Dance_of_the_Elements"
+        },
+        "images": "https://drive.google.com/file/d/10V2IbkMJtgueQTzpCOgVZdD8wQpbP4GY/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 15,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Cartoon Heroes Live",
+            "bio": "Beloved cartoon characters come to life in a show filled with excitement and laughter.",
+            "website": "https://cartoon-heroes-live.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Cartoon_Heroes_Live"
+        },
+        "images": "https://drive.google.com/file/d/1ccTa3ixTeu9-FY3KJM2t70FMv5agrJyR/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 21,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Magical Storytellers",
+            "bio": "Experience enchanting tales with a twist of magic and wonder for kids and families.",
+            "website": "https://magical-storytellers.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Magical_Storytellers"
+        },
+        "images": "https://drive.google.com/file/d/1V_54oWXr6-cYxnSnl8G6UAMH-9sQ9WI-/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 23,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Magical Storytellers",
+            "bio": "Experience enchanting tales with a twist of magic and wonder for kids and families.",
+            "website": "https://magical-storytellers.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Magical_Storytellers"
+        },
+        "images": "https://drive.google.com/file/d/1V_54oWXr6-cYxnSnl8G6UAMH-9sQ9WI-/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 25,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "The Amazing Acrobats",
+            "bio": "Watch breathtaking acrobatic performances that defy gravity and thrill the audience.",
+            "website": "https://the-amazing-acrobats.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/The_Amazing_Acrobats"
+        },
+        "images": "https://drive.google.com/file/d/1fqnPWEePqi8d9M7SuQZsaSnbKSNGWFcR/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 29,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "The Wonder Clowns",
+            "bio": "A delightful family show featuring clowns, magic, and laughs for all ages.",
+            "website": "https://the-wonder-clowns.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/The_Wonder_Clowns"
+        },
+        "images": "https://drive.google.com/file/d/1JQzOgsenos9p3y6NAjmw0kCFre-24J__/view?usp=drive_link",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 30,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Dance of the Elements",
+            "bio": "A stunning performance combining dance, music, and light effects for a magical experience.",
+            "website": "https://dance-of-the-elements.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Dance_of_the_Elements"
+        },
+        "images": "https://drive.google.com/file/d/10V2IbkMJtgueQTzpCOgVZdD8wQpbP4GY/view?usp=drive_link",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 33,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Dance of the Elements",
+            "bio": "A stunning performance combining dance, music, and light effects for a magical experience.",
+            "website": "https://dance-of-the-elements.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Dance_of_the_Elements"
+        },
+        "images": "https://drive.google.com/file/d/10V2IbkMJtgueQTzpCOgVZdD8wQpbP4GY/view?usp=drive_link",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 36,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Fantastic Jugglers",
+            "bio": "A mesmerizing juggling show that will captivate audiences of all ages.",
+            "website": "https://fantastic-jugglers.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Fantastic_Jugglers"
+        },
+        "images": "https://drive.google.com/file/d/1qAzecwV2W695EEYR9if6Zz4R3nXS4sSM/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 40,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Cartoon Heroes Live",
+            "bio": "Beloved cartoon characters come to life in a show filled with excitement and laughter.",
+            "website": "https://cartoon-heroes-live.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Cartoon_Heroes_Live"
+        },
+        "images": "https://drive.google.com/file/d/1ccTa3ixTeu9-FY3KJM2t70FMv5agrJyR/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 42,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "The Amazing Acrobats",
+            "bio": "Watch breathtaking acrobatic performances that defy gravity and thrill the audience.",
+            "website": "https://the-amazing-acrobats.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/The_Amazing_Acrobats"
+        },
+        "images": "https://drive.google.com/file/d/1ccTa3ixTeu9-FY3KJM2t70FMv5agrJyR/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 43,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "The Wonder Clowns",
+            "bio": "A delightful family show featuring clowns, magic, and laughs for all ages.",
+            "website": "https://the-wonder-clowns.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/The_Wonder_Clowns"
+        },
+        "images": "https://drive.google.com/file/d/1JQzOgsenos9p3y6NAjmw0kCFre-24J__/view?usp=drive_link",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 58,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "The Wonder Clowns",
+            "bio": "A delightful family show featuring clowns, magic, and laughs for all ages.",
+            "website": "https://the-wonder-clowns.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/The_Wonder_Clowns"
+        },
+        "images": "https://drive.google.com/file/d/1JQzOgsenos9p3y6NAjmw0kCFre-24J__/view?usp=drive_link",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 59,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Magical Storytellers",
+            "bio": "Experience enchanting tales with a twist of magic and wonder for kids and families.",
+            "website": "https://magical-storytellers.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Magical_Storytellers"
+        },
+        "images": "https://drive.google.com/file/d/1V_54oWXr6-cYxnSnl8G6UAMH-9sQ9WI-/view?usp=drive_link",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 71,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Cartoon Heroes Live",
+            "bio": "Beloved cartoon characters come to life in a show filled with excitement and laughter.",
+            "website": "https://cartoon-heroes-live.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Cartoon_Heroes_Live"
+        },
+        "images": "https://drive.google.com/file/d/1ccTa3ixTeu9-FY3KJM2t70FMv5agrJyR/view?usp=drive_link",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 72,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "The Wonder Clowns",
+            "bio": "A delightful family show featuring clowns, magic, and laughs for all ages.",
+            "website": "https://the-wonder-clowns.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/The_Wonder_Clowns"
+        },
+        "images": "https://drive.google.com/file/d/1JQzOgsenos9p3y6NAjmw0kCFre-24J__/view?usp=drive_link",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 74,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "The Amazing Acrobats",
+            "bio": "Watch breathtaking acrobatic performances that defy gravity and thrill the audience.",
+            "website": "https://the-amazing-acrobats.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/The_Amazing_Acrobats"
+        },
+        "images": "https://drive.google.com/file/d/1ccTa3ixTeu9-FY3KJM2t70FMv5agrJyR/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 75,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Circus of Joy",
+            "bio": "A lively circus filled with fun acts, animals, and entertainment for the whole family.",
+            "website": "https://circus-of-joy.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Circus_of_Joy"
+        },
+        "images": "https://drive.google.com/file/d/1HRJ1x7NvPsYEbzOLCthFYq4yv27AyF7s/view?usp=drive_link",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 81,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "The Singing Pirates",
+            "bio": "Join the Singing Pirates on an adventure filled with songs and treasure hunts.",
+            "website": "https://the-singing-pirates.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/The_Singing_Pirates"
+        },
+        "images": "https://drive.google.com/file/d/1ccTa3ixTeu9-FY3KJM2t70FMv5agrJyR/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 83,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "Dance of the Elements",
+            "bio": "A stunning performance combining dance, music, and light effects for a magical experience.",
+            "website": "https://dance-of-the-elements.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/Dance_of_the_Elements"
+        },
+        "images": "https://drive.google.com/file/d/1ccTa3ixTeu9-FY3KJM2t70FMv5agrJyR/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    },
+    {
+        "sql_event_id": 85,
+        "category": "family",
+        "performer": {
+            "type": "artist",
+            "name": "The Amazing Acrobats",
+            "bio": "Watch breathtaking acrobatic performances that defy gravity and thrill the audience.",
+            "website": "https://the-amazing-acrobats.com",
+            "wikipediaLink": "https://wikipedia.org/wiki/The_Amazing_Acrobats"
+        },
+        "images": "https://drive.google.com/file/d/1ccTa3ixTeu9-FY3KJM2t70FMv5agrJyR/view?usp=sharing",
+        "last_updated": "2024-11-12"
+    }
+]
