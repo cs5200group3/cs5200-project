@@ -9,10 +9,63 @@ UNSPLASH_ACCESS_KEY = "EY8Rq3I7DfDGBONe7RfMNn4WXf2cUtJWwoXDL_ZUuGo"
 event_ids = [2, 8, 17, 18, 22, 26, 32, 39, 47, 48, 50, 53, 57, 62, 63, 66, 67, 68, 76, 77, 79, 88, 89]
 
 # Define possible values for random generation
-names = [
-    "Alex Rivera", "Jamie Lee", "Taylor Reese", "Jordan Monroe", "Robin Evans", 
-    "Morgan Swift", "Drew Hart", "Casey Parker", "Avery Quinn", "Sage Brooks"
+# names = [
+#     "Alex Rivera", "Jamie Lee", "Taylor Reese", "Jordan Monroe", "Robin Evans", 
+#     "Morgan Swift", "Drew Hart", "Casey Parker", "Avery Quinn", "Sage Brooks"
+# ]
+artist_profiles = [
+    {
+        "name": "Alex Rivera",
+        "website": "https://alexrivera-arts.com",
+        "wikipediaLink": "https://wikipedia.org/wiki/Alex_Rivera"
+    },
+    {
+        "name": "Jamie Lee",
+        "website": "https://jamielee-comedy.com",
+        "wikipediaLink": "https://wikipedia.org/wiki/Jamie_Lee"
+    },
+    {
+        "name": "Taylor Reese",
+        "website": "https://taylorreese-theater.org",
+        "wikipediaLink": "https://wikipedia.org/wiki/Taylor_Reese"
+    },
+    {
+        "name": "Jordan Monroe",
+        "website": "https://jordanmonroe.com",
+        "wikipediaLink": "https://wikipedia.org/wiki/Jordan_Monroe"
+    },
+    {
+        "name": "Robin Evans",
+        "website": "https://robinsartspace.com",
+        "wikipediaLink": "https://wikipedia.org/wiki/Robin_Evans"
+    },
+    {
+        "name": "Morgan Swift",
+        "website": "https://morganswift-performer.info",
+        "wikipediaLink": "https://wikipedia.org/wiki/Morgan_Swift"
+    },
+    {
+        "name": "Drew Hart",
+        "website": "https://drewhart-standup.com",
+        "wikipediaLink": "https://wikipedia.org/wiki/Drew_Hart"
+    },
+    {
+        "name": "Casey Parker",
+        "website": "https://caseyparker.com",
+        "wikipediaLink": "https://wikipedia.org/wiki/Casey_Parker"
+    },
+    {
+        "name": "Avery Quinn",
+        "website": "https://averyquinn-theatre.org",
+        "wikipediaLink": "https://wikipedia.org/wiki/Avery_Quinn"
+    },
+    {
+        "name": "Sage Brooks",
+        "website": "https://sagebrooks-art.com",
+        "wikipediaLink": "https://wikipedia.org/wiki/Sage_Brooks"
+    }
 ]
+
 bios = [
     "An emerging artist known for their striking use of color and abstract forms.",
     "A comedian who brings real-world issues to the stage with a humorous twist.",
@@ -25,18 +78,18 @@ bios = [
     "A veteran theater actor revered for their versatility on stage.",
     "An experimental artist pushing the limits of visual and performance art."
 ]
-websites = [
-    "https://alexrivera-arts.com", "https://jordanmonroe-comedy.com", 
-    "https://averyquinn-theatre.org", "https://tayloreese-studio.net", 
-    "https://sagebrooks-art.com", "https://morganswift-performer.info",
-    "https://drew-hart-standup.com", "https://robinevans-performances.org"
-]
-wikipedia_links = [
-    "https://wikipedia.org/wiki/Alex_Rivera", "https://wikipedia.org/wiki/Jamie_Lee",
-    "https://wikipedia.org/wiki/Taylor_Reese", "https://wikipedia.org/wiki/Jordan_Monroe",
-    "https://wikipedia.org/wiki/Robin_Evans", "https://wikipedia.org/wiki/Morgan_Swift",
-    "https://wikipedia.org/wiki/Drew_Hart", "https://wikipedia.org/wiki/Casey_Parker"
-]
+# websites = [
+#     "https://alexrivera-arts.com", "https://jordanmonroe-comedy.com", 
+#     "https://averyquinn-theatre.org", "https://tayloreese-studio.net", 
+#     "https://sagebrooks-art.com", "https://morganswift-performer.info",
+#     "https://drew-hart-standup.com", "https://robinevans-performances.org"
+# ]
+# wikipedia_links = [
+#     "https://wikipedia.org/wiki/Alex_Rivera", "https://wikipedia.org/wiki/Jamie_Lee",
+#     "https://wikipedia.org/wiki/Taylor_Reese", "https://wikipedia.org/wiki/Jordan_Monroe",
+#     "https://wikipedia.org/wiki/Robin_Evans", "https://wikipedia.org/wiki/Morgan_Swift",
+#     "https://wikipedia.org/wiki/Drew_Hart", "https://wikipedia.org/wiki/Casey_Parker"
+# ]
 
 # Define artist types
 artist_types = ["musician", "opera", "comedian", "painter", "theater", "sculptor"]
@@ -54,10 +107,14 @@ def get_unsplash_image_url(keyword):
 
 def generate_random_event_data(event_id):
     # Randomly choose values for each field
-    performer_name = random.choice(names)
+    artist_profile = random.choice(artist_profiles)
+    performer_name = artist_profile["name"]
+    performer_website = artist_profile["website"]
+    performer_wikipedia = artist_profile["wikipediaLink"]
+    # performer_name = random.choice(names)
     performer_bio = random.choice(bios)
-    performer_website = random.choice(websites)
-    performer_wikipedia = random.choice(wikipedia_links)
+    # performer_website = random.choice(websites)
+    # performer_wikipedia = random.choice(wikipedia_links)
     performer_type = random.choice(artist_types)  # Choose a random artist type
     
     # Use Unsplash to get a random image URL based on the performer type
