@@ -1,0 +1,29 @@
+
+
+{
+  "sql_event_id": 1,
+  "performer": {
+    "type": "artist",
+    "name": "Sample Artist",
+    "bio": "Artist biography goes here",
+    "image": "https://example.com/artist-image.jpg",
+    "socialMedia": {
+      "facebook": "https://facebook.com/artistpage",
+      "twitter": "https://twitter.com/artisthandle",
+      "instagram": "https://instagram.com/artistprofile"
+    },
+    "website": "https://artist-website.com",
+    "wikipediaLink": "https://wikipedia.org/wiki/Artist_Name"
+  },
+
+  "media": {
+    "images": [
+      "https://event-image1.jpg",
+      "https://event-image2.jpg"
+    ],
+    "promoVideo": "https://promo-video-url.mp4",
+    "virtualTour": "https://virtual-tour-url.com"
+  },
+  "last_updated": "2024-11-12"
+
+}
