@@ -1,5 +1,4 @@
 
-
 {
   "sql_event_id": 1,
   "performer": {
@@ -16,14 +15,6 @@
     "wikipediaLink": "https://wikipedia.org/wiki/Artist_Name"
   },
 
-  "media": {
-    "images": [
-      "https://event-image1.jpg",
-      "https://event-image2.jpg"
-    ],
-    "promoVideo": "https://promo-video-url.mp4",
-    "virtualTour": "https://virtual-tour-url.com"
-  },
+  "images": "https://event-image1.jpg",
   "last_updated": "2024-11-12"
-
 }
