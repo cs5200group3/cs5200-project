@@ -1,223 +1,103 @@
 [
     {
         "sql_event_id": 6,
-        "sports name": "tennis",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Dawn Jarvis",
-                "bio": "Tennis player Dawn Jarvis is a former world No. 1 in singles and doubles.",
-                "image": "https://images.unsplash.com/photo-1706653332453-6af9b1616a31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NDl8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Athlete_One"
-            },
-            {
-                "type": "athlete",
-                "name": "Robin Davis",
-                "bio": "Tennis player Robin Davis is a former world No. 10 in singles.",
-                "image": "https://images.unsplash.com/photo-1614328692430-2f44a42803a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTB8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Athlete_One"
-            }
-        ],
-        "images": "https://event-image1.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Dawn Jarvis",
+        "bio": "Tennis player Dawn Jarvis is a former world No. 1 in singles and doubles.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Athlete_One",
+        "images": "https://event-image1.jpg"
     },
     {
         "sql_event_id": 11,
-        "sports name": "basketball",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Michael Jordan",
-                "bio": "Michael Jordan is a former professional basketball player and six-time NBA champion.",
-                "image": "https://images.unsplash.com/photo-1569531955399-243c30900a13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTB8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Michael_Jordan"
-            },
-            {
-                "type": "athlete",
-                "name": "LeBron James",
-                "bio": "LeBron James is a professional basketball player and four-time NBA champion.",
-                "image": "https://images.unsplash.com/photo-1724692728085-b822cd9529f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTB8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/LeBron_James"
-            }
-        ],
-        "images": "https://event-image2.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Michael Jordan",
+        "bio": "Michael Jordan is a former professional basketball player and six-time NBA champion.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Michael_Jordan",
+        "images": "https://event-image2.jpg"
     },
     {
         "sql_event_id": 13,
-        "sports name": "soccer",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Lionel Messi",
-                "bio": "Lionel Messi is a professional soccer player and seven-time Ballon d'Or winner.",
-                "image": "https://images.unsplash.com/photo-1660304755794-a4c94ca4cceb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTF8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Lionel_Messi"
-            },
-            {
-                "type": "athlete",
-                "name": "Cristiano Ronaldo",
-                "bio": "Cristiano Ronaldo is a professional soccer player and five-time Ballon d'Or winner.",
-                "image": "https://images.unsplash.com/photo-1526635090919-b5d79657c5a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTF8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Cristiano_Ronaldo"
-            }
-        ],
-        "images": "https://event-image3.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Lionel Messi",
+        "bio": "Lionel Messi is a professional soccer player and seven-time Ballon d'Or winner.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Lionel_Messi",
+        "images": "https://event-image3.jpg"
     },
     {
         "sql_event_id": 38,
-        "sports name": "baseball",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Babe Ruth",
-                "bio": "Babe Ruth was a professional baseball player and one of the greatest sports heroes in American culture.",
-                "image": "https://images.unsplash.com/photo-1663707598109-48aa2cf87bfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTF8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Babe_Ruth"
-            },
-            {
-                "type": "athlete",
-                "name": "Jackie Robinson",
-                "bio": "Jackie Robinson was a professional baseball player who broke the baseball color line.",
-                "image": "https://images.unsplash.com/photo-1507901623637-e1090d5e7201?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTF8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Jackie_Robinson"
-            }
-        ],
-        "images": "https://event-image4.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Babe Ruth",
+        "bio": "Babe Ruth was a professional baseball player and one of the greatest sports heroes in American culture.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Babe_Ruth",
+        "images": "https://event-image4.jpg"
     },
     {
         "sql_event_id": 41,
-        "sports name": "swimming",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Michael Phelps",
-                "bio": "Michael Phelps is a former competitive swimmer and the most successful Olympian of all time.",
-                "image": "https://images.unsplash.com/photo-1562766987-deec284770df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTJ8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Michael_Phelps"
-            },
-            {
-                "type": "athlete",
-                "name": "Katie Ledecky",
-                "bio": "Katie Ledecky is a professional swimmer and multiple Olympic gold medalist.",
-                "image": "https://images.unsplash.com/photo-1704305978921-2f640b8aaf20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTJ8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Katie_Ledecky"
-            }
-        ],
-        "images": "https://event-image5.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Michael Phelps",
+        "bio": "Michael Phelps is a former competitive swimmer and the most successful Olympian of all time.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Michael_Phelps",
+        "images": "https://event-image5.jpg"
     },
     {
         "sql_event_id": 44,
-        "sports name": "track and field",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Usain Bolt",
-                "bio": "Usain Bolt is a former sprinter and the fastest man in the world.",
-                "image": "https://images.unsplash.com/photo-1675448057779-5461731e6b0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTJ8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Usain_Bolt"
-            },
-            {
-                "type": "athlete",
-                "name": "Allyson Felix",
-                "bio": "Allyson Felix is a professional track and field sprinter and multiple Olympic gold medalist.",
-                "image": "https://images.unsplash.com/photo-1591447279677-b81cb35f98e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTJ8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Allyson_Felix"
-            }
-        ],
-        "images": "https://event-image6.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Usain Bolt",
+        "bio": "Usain Bolt is a former sprinter and the fastest man in the world.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Usain_Bolt",
+        "images": "https://event-image6.jpg"
     },
     {
         "sql_event_id": 52,
-        "sports name": "gymnastics",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Simone Biles",
-                "bio": "Simone Biles is a professional gymnast and the most decorated gymnast of all time.",
-                "image": "https://images.unsplash.com/photo-1726509319288-01d7e9d50ca9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTN8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Simone_Biles"
-            },
-            {
-                "type": "athlete",
-                "name": "Nadia Comaneci",
-                "bio": "Nadia Comaneci is a former gymnast and the first gymnast to score a perfect 10 at the Olympics.",
-                "image": "https://images.unsplash.com/photo-1716323246181-56a1969a89ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTN8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Nadia_Comaneci"
-            }
-        ],
-        "images": "https://event-image7.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Simone Biles",
+        "bio": "Simone Biles is a professional gymnast and the most decorated gymnast of all time.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Simone_Biles",
+        "images": "https://event-image7.jpg"
     },
     {
         "sql_event_id": 54,
-        "sports name": "boxing",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Muhammad Ali",
-                "bio": "Muhammad Ali was a professional boxer and three-time world heavyweight champion.",
-                "image": "https://images.unsplash.com/photo-1711966751514-4df7b3759357?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTN8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Muhammad_Ali"
-            },
-            {
-                "type": "athlete",
-                "name": "Mike Tyson",
-                "bio": "Mike Tyson is a former professional boxer and undisputed world heavyweight champion.",
-                "image": "https://images.unsplash.com/photo-1700228773257-a68bf6111645?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTN8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Mike_Tyson"
-            }
-        ],
-        "images": "https://event-image8.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Muhammad Ali",
+        "bio": "Muhammad Ali was a professional boxer and three-time world heavyweight champion.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Muhammad_Ali",
+        "images": "https://event-image8.jpg"
     },
     {
         "sql_event_id": 56,
-        "sports name": "golf",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Tiger Woods",
-                "bio": "Tiger Woods is a professional golfer and one of the greatest golfers of all time.",
-                "image": "https://images.unsplash.com/photo-1701772166885-9aa7ceedb4e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTR8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Tiger_Woods"
-            },
-            {
-                "type": "athlete",
-                "name": "Jack Nicklaus",
-                "bio": "Jack Nicklaus is a former professional golfer and widely regarded as the greatest golfer of all time.",
-                "image": "https://images.unsplash.com/photo-1563450217324-3891a89b8223?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTR8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Jack_Nicklaus"
-            }
-        ],
-        "images": "https://event-image9.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Tiger Woods",
+        "bio": "Tiger Woods is a professional golfer and one of the greatest golfers of all time.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Tiger_Woods",
+        "images": "https://event-image9.jpg"
     },
     {
         "sql_event_id": 60,
-        "sports name": "cycling",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Lance Armstrong",
-                "bio": "Lance Armstrong is a former professional road racing cyclist and seven-time Tour de France winner.",
-                "image": "https://images.unsplash.com/photo-1631056983685-33c1cd3181e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTR8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Lance_Armstrong"
-            },
-            {
-                "type": "athlete",
-                "name": "Eddy Merckx",
-                "bio": "Eddy Merckx is a former professional road and track bicycle racer and one of the greatest cyclists of all time.",
-                "image": "https://images.unsplash.com/photo-1523821757808-8c895a0aba06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTV8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Eddy_Merckx"
-            }
-        ],
-        "images": "https://event-image10.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Lance Armstrong",
+        "bio": "Lance Armstrong is a former professional road racing cyclist and seven-time Tour de France winner.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Lance_Armstrong",
+        "images": "https://event-image10.jpg"
     },
     {
         "sql_event_id": 61,
@@ -331,134 +211,62 @@
     },
     {
         "sql_event_id": 61,
-        "sports name": "skiing",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Lindsey Vonn",
-                "bio": "Lindsey Vonn is a former World Cup alpine ski racer and Olympic gold medalist.",
-                "image": "https://images.unsplash.com/photo-1631446873024-0b76fc73d5e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTd8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Lindsey_Vonn"
-            },
-            {
-                "type": "athlete",
-                "name": "Bode Miller",
-                "bio": "Bode Miller is a former World Cup alpine ski racer and Olympic gold medalist.",
-                "image": "https://images.unsplash.com/photo-1692197163004-f250b99ce407?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTd8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Bode_Miller"
-            }
-        ],
-        "images": "https://event-image11.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Lindsey Vonn",
+        "bio": "Lindsey Vonn is a former World Cup alpine ski racer and Olympic gold medalist.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Lindsey_Vonn",
+        "images": "https://event-image11.jpg"
     },
     {
         "sql_event_id": 64,
-        "sports name": "cricket",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Sachin Tendulkar",
-                "bio": "Sachin Tendulkar is a former international cricketer and one of the greatest batsmen of all time.",
-                "image": "https://images.unsplash.com/photo-1584074274726-22b2cac631f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTh8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Sachin_Tendulkar"
-            },
-            {
-                "type": "athlete",
-                "name": "Brian Lara",
-                "bio": "Brian Lara is a former international cricketer and one of the greatest batsmen of all time.",
-                "image": "https://images.unsplash.com/photo-1662939434901-90ce976c419a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTh8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Brian_Lara"
-            }
-        ],
-        "images": "https://event-image12.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Sachin Tendulkar",
+        "bio": "Sachin Tendulkar is a former international cricketer and one of the greatest batsmen of all time.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Sachin_Tendulkar",
+        "images": "https://event-image12.jpg"
     },
     {
         "sql_event_id": 87,
-        "sports name": "badminton",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Lin Dan",
-                "bio": "Lin Dan is a former professional badminton player and two-time Olympic champion.",
-                "image": "https://images.unsplash.com/photo-1608408448574-f7dd3bc17d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTh8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Lin_Dan"
-            },
-            {
-                "type": "athlete",
-                "name": "Lee Chong Wei",
-                "bio": "Lee Chong Wei is a former professional badminton player and three-time Olympic silver medalist.",
-                "image": "https://images.unsplash.com/photo-1659186430290-1858364e3c26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTh8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Lee_Chong_Wei"
-            }
-        ],
-        "images": "https://event-image18.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Lin Dan",
+        "bio": "Lin Dan is a former professional badminton player and two-time Olympic champion.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Lin_Dan",
+        "images": "https://event-image18.jpg"
     },
     {
         "sql_event_id": 90,
-        "sports name": "archery",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Kim Woo-jin",
-                "bio": "Kim Woo-jin is a professional archer and two-time world champion.",
-                "image": "https://images.unsplash.com/photo-1648483085782-4bc8f957e37c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTl8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Kim_Woo-jin"
-            },
-            {
-                "type": "athlete",
-                "name": "Brady Ellison",
-                "bio": "Brady Ellison is a professional archer and three-time Olympic medalist.",
-                "image": "https://images.unsplash.com/photo-1593482789096-787659a00d44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTl8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Brady_Ellison"
-            }
-        ],
-        "images": "https://event-image19.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Kim Woo-jin",
+        "bio": "Kim Woo-jin is a professional archer and two-time world champion.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Kim_Woo-jin",
+        "images": "https://event-image19.jpg"
     },
     {
         "sql_event_id": 92,
-        "sports name": "fencing",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Valentina Vezzali",
-                "bio": "Valentina Vezzali is a former professional fencer and six-time Olympic gold medalist.",
-                "image": "https://images.unsplash.com/photo-1517229986720-871cf0539a10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NTl8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Valentina_Vezzali"
-            },
-            {
-                "type": "athlete",
-                "name": "Aron Szilagyi",
-                "bio": "Aron Szilagyi is a professional fencer and three-time Olympic gold medalist.",
-                "image": "https://images.unsplash.com/photo-1694720274936-298495c4dc8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NjB8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Aron_Szilagyi"
-            }
-        ],
-        "images": "https://event-image20.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Valentina Vezzali",
+        "bio": "Valentina Vezzali is a former professional fencer and six-time Olympic gold medalist.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Valentina_Vezzali",
+        "images": "https://event-image20.jpg"
     },
     {
         "sql_event_id": 96,
-        "sports name": "weightlifting",
-        "personnel": [
-            {
-                "type": "athlete",
-                "name": "Naim S\u00fcleymano\u011flu",
-                "bio": "Naim S\u00fcleymano\u011flu was a professional weightlifter and three-time Olympic gold medalist.",
-                "image": "https://images.unsplash.com/photo-1598284904261-a0457d1d75ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NzQ4NzF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE0NTQ3NjB8&ixlib=rb-4.0.3&q=80&w=1080",
-                "wikipediaLink": "https://wikipedia.org/wiki/Naim_S\u00fcleymano\u011flu"
-            },
-            {
-                "type": "athlete",
-                "name": "Lasha Talakhadze",
-                "bio": "Lasha Talakhadze is a professional weightlifter and multiple-time world champion.",
-                "image": "https://via.placeholder.com/400",
-                "wikipediaLink": "https://wikipedia.org/wiki/Lasha_Talakhadze"
-            }
-        ],
-        "images": "https://en.wikipedia.org/wiki/Olympic_weightlifting#/media/File:Kuo_Hsing-chun_at_her_final_round_in_2024_Summer_Olympics_2024-08-09.jpg",
-        "last_updated": "2024-11-12"
+        "category": "sports",
+        "type": "athlete",
+        "name": "Naim Süleymanoğlu",
+        "bio": "Naim Süleymanoğlu was a professional weightlifter and three-time Olympic gold medalist.",
+        "website": "",
+        "wikipediaLink": "https://wikipedia.org/wiki/Naim_Süleymanoğlu",
+        "images": "https://en.wikipedia.org/wiki/Olympic_weightlifting#/media/File:Kuo_Hsing-chun_at_her_final_round_in_2024_Summer_Olympics_2024-08-09.jpg"
     }
 ]
