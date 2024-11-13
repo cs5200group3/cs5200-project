@@ -1,6 +1,7 @@
 
 {
   "sql_event_id": 1,
+  "category": "sports",
   "type": "artist",
   "name": "Sample Artist",
   "bio": "Artist biography goes here",
