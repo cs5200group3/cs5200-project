@@ -1,15 +1,10 @@
 
 {
   "sql_event_id": 1,
-  "performer": {
-    "type": "artist",
-    "name": "Sample Artist",
-    "bio": "Artist biography goes here",
-    "image": "https://example.com/artist-image.jpg",
-    "website": "https://artist-website.com",
-    "wikipediaLink": "https://wikipedia.org/wiki/Artist_Name"
-  },
-
+  "type": "artist",
+  "name": "Sample Artist",
+  "bio": "Artist biography goes here",
+  "website": "https://artist-website.com",
+  "wikipediaLink": "https://wikipedia.org/wiki/Artist_Name",
   "images": "https://event-image1.jpg",
-  "last_updated": "2024-11-12"
 }
