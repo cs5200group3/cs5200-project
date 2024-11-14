@@ -2,7 +2,7 @@
     {
         "sql_event_id": 6,
         "category": "sports",
-        "type": "athlete",
+        "type": "tennis",
         "name": "Dawn Jarvis",
         "bio": "Tennis player Dawn Jarvis is a former world No. 1 in singles and doubles.",
         "website": "",
@@ -12,7 +12,7 @@
     {
         "sql_event_id": 11,
         "category": "sports",
-        "type": "athlete",
+        "type": "basketball",
         "name": "Michael Jordan",
         "bio": "Michael Jordan is a former professional basketball player and six-time NBA champion.",
         "website": "",
@@ -22,7 +22,7 @@
     {
         "sql_event_id": 13,
         "category": "sports",
-        "type": "athlete",
+        "type": "soccer",
         "name": "Lionel Messi",
         "bio": "Lionel Messi is a professional soccer player and seven-time Ballon d'Or winner.",
         "website": "",
@@ -32,7 +32,7 @@
     {
         "sql_event_id": 38,
         "category": "sports",
-        "type": "athlete",
+        "type": "baseball",
         "name": "Babe Ruth",
         "bio": "Babe Ruth was a professional baseball player and one of the greatest sports heroes in American culture.",
         "website": "",
@@ -42,7 +42,7 @@
     {
         "sql_event_id": 41,
         "category": "sports",
-        "type": "athlete",
+        "type": "swimming",
         "name": "Michael Phelps",
         "bio": "Michael Phelps is a former competitive swimmer and the most successful Olympian of all time.",
         "website": "",
@@ -52,7 +52,7 @@
     {
         "sql_event_id": 44,
         "category": "sports",
-        "type": "athlete",
+        "type": "track and field",
         "name": "Usain Bolt",
         "bio": "Usain Bolt is a former sprinter and the fastest man in the world.",
         "website": "",
@@ -62,7 +62,7 @@
     {
         "sql_event_id": 52,
         "category": "sports",
-        "type": "athlete",
+        "type": "gymnastics",
         "name": "Simone Biles",
         "bio": "Simone Biles is a professional gymnast and the most decorated gymnast of all time.",
         "website": "",
@@ -72,7 +72,7 @@
     {
         "sql_event_id": 54,
         "category": "sports",
-        "type": "athlete",
+        "type": "boxing",
         "name": "Muhammad Ali",
         "bio": "Muhammad Ali was a professional boxer and three-time world heavyweight champion.",
         "website": "",
@@ -82,7 +82,7 @@
     {
         "sql_event_id": 56,
         "category": "sports",
-        "type": "athlete",
+        "type": "golf",
         "name": "Tiger Woods",
         "bio": "Tiger Woods is a professional golfer and one of the greatest golfers of all time.",
         "website": "",
@@ -92,7 +92,7 @@
     {
         "sql_event_id": 60,
         "category": "sports",
-        "type": "athlete",
+        "type": "cycling",
         "name": "Lance Armstrong",
         "bio": "Lance Armstrong is a former professional road racing cyclist and seven-time Tour de France winner.",
         "website": "",
@@ -102,7 +102,7 @@
     {
         "sql_event_id": 61,
         "category": "sports",
-        "type": "athlete",
+        "type": "skiing",
         "name": "Lindsey Vonn",
         "bio": "Lindsey Vonn is a former World Cup alpine ski racer and Olympic gold medalist.",
         "website": "",
@@ -112,7 +112,7 @@
     {
         "sql_event_id": 64,
         "category": "sports",
-        "type": "athlete",
+        "type": "cricket",
         "name": "Sachin Tendulkar",
         "bio": "Sachin Tendulkar is a former international cricketer and one of the greatest batsmen of all time.",
         "website": "",
@@ -122,7 +122,7 @@
     {
         "sql_event_id": 70,
         "category": "sports",
-        "type": "athlete",
+        "type": "tennis",
         "name": "Dawn Jarvis",
         "bio": "Tennis player Dawn Jarvis is a former world No. 1 in singles and doubles.",
         "website": "",
@@ -132,7 +132,7 @@
     {
         "sql_event_id": 73,
         "category": "sports",
-        "type": "athlete",
+        "type": "basketball",
         "name": "Michael Jordan",
         "bio": "Michael Jordan is a former professional basketball player and six-time NBA champion.",
         "website": "",
@@ -142,7 +142,7 @@
     {
         "sql_event_id": 82,
         "category": "sports",
-        "type": "athlete",
+        "type": "soccer",
         "name": "Lionel Messi",
         "bio": "Lionel Messi is a professional soccer player and seven-time Ballon d'Or winner.",
         "website": "",
@@ -152,7 +152,7 @@
     {
         "sql_event_id": 84,
         "category": "sports",
-        "type": "athlete",
+        "type": "baseball",
         "name": "Babe Ruth",
         "bio": "Babe Ruth was a professional baseball player and one of the greatest sports heroes in American culture.",
         "website": "",
@@ -162,7 +162,7 @@
     {
         "sql_event_id": 87,
         "category": "sports",
-        "type": "athlete",
+        "type": "badminton",
         "name": "Lin Dan",
         "bio": "Lin Dan is a former professional badminton player and two-time Olympic champion.",
         "website": "",
@@ -172,7 +172,7 @@
     {
         "sql_event_id": 90,
         "category": "sports",
-        "type": "athlete",
+        "type": "archery",
         "name": "Kim Woo-jin",
         "bio": "Kim Woo-jin is a professional archer and two-time world champion.",
         "website": "",
@@ -182,7 +182,7 @@
     {
         "sql_event_id": 92,
         "category": "sports",
-        "type": "athlete",
+        "type": "fencing",
         "name": "Valentina Vezzali",
         "bio": "Valentina Vezzali is a former professional fencer and six-time Olympic gold medalist.",
         "website": "",
@@ -192,7 +192,7 @@
     {
         "sql_event_id": 96,
         "category": "sports",
-        "type": "athlete",
+        "type": "weightlifting",
         "name": "Naim Süleymanoğlu",
         "bio": "Naim Süleymanoğlu was a professional weightlifter and three-time Olympic gold medalist.",
         "website": "",
@@ -202,7 +202,7 @@
     {
         "sql_event_id": 100,
         "category": "sports",
-        "type": "athlete",
+        "type": "track and field",
         "name": "Usain Bolt",
         "bio": "Usain Bolt is a retired Jamaican sprinter, widely considered to be the greatest sprinter of all time.",
         "website": "http://usainbolt.com",
