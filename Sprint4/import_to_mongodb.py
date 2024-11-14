@@ -12,9 +12,10 @@ def load_json_file(file_path):
 data1 = load_json_file('event-details-arts-theatre-comedy.json')
 data2 = load_json_file('Event_family.json')
 data3 = load_json_file('fake_events_concert_data.json')
+data4 = load_json_file('updated_sports.json')
 
 # Combine all data into a single list
-combined_data = data1 + data2 + data3
+combined_data = data1 + data2 + data3 + data4
 
 # MongoDB Atlas connection string
 connection_string = "mongodb+srv://csycsy623:cs5200@cluster0.eenjl.mongodb.net/"
