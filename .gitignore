@@ -74,3 +74,4 @@ EOT
 
 # Ignore the virtual environment
 myenv/
+venv/
