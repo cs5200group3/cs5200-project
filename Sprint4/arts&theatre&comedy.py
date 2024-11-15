@@ -125,7 +125,7 @@ def generate_random_event_data(event_id):
     
     # Create event data dictionary
     event_data = {
-        "sql_event_id": event_id,
+        "number": event_id,
         "performer": {
             "type": performer_type,
             "name": performer_name,
