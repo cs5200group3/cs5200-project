@@ -33,13 +33,27 @@ ALTER TABLE OrderTicket ADD INDEX idx_ticket_id (ticket_id);
 ALTER TABLE Ticket ADD INDEX idx_event_id (event_id);
 ```
 
-## 4. Assess Query Performance (After Indexing)
+## 4. Reusing Existing Indexes
+During the optimization process, the following indexes were identified as already existing from previous optimizations:
+1. **`Order.idx_user`**: This index was created to optimize filtering and `GROUP BY` operations on the `user` column.
+2. **`OrderTicket.idx_order_id`**: This index was created to optimize joins on the `order_id` column.
+
+As these indexes were already in place, they were reused effectively to improve query performance without needing to recreate them.
+
+### Validating Index Existence
+The following commands were used to verify the existence of these indexes before executing any `ALTER TABLE` statements:
+```sql
+SHOW INDEX FROM `Order`;
+SHOW INDEX FROM `OrderTicket`;
+```
+
+## 5. Assess Query Performance (After Indexing)
 ### After Adding Indexes
 - **Details**:
   - Execution time significantly reduced.
   - Indexes on `order_id`, `ticket_id`, and `event_id` enabled efficient lookups.
 
-## 5. Comparison for Query 1
+## 6. Comparison for Query 1
 | Metric                | Before Indexing      | After Indexing      |
 |-----------------------|----------------------|---------------------|
 | Execution Time (ms)   | 4.805 - 4.838       | 0.072 - 0.108       |
@@ -48,7 +62,7 @@ ALTER TABLE Ticket ADD INDEX idx_event_id (event_id);
 
 ---
 
-## 6. New Query: Optimizing Aggregation
+## 7. New Query: Optimizing Aggregation
 ### Query 2
 ```sql
 SELECT 
@@ -61,25 +75,28 @@ GROUP BY o.user;
 ```
 - **Observation**: This query involves aggregation (`COUNT` and `SUM`) and grouping, which can become slow without appropriate indexes.
 
-## 7. Assess Query Performance (Before Indexing)
+## 8. Assess Query Performance (Before Indexing)
 ### Before Adding Indexes
 - **Details**:
   - High execution time due to full table scans and inefficient aggregation.
 
-## 8. Implement Indexes for Aggregation
+## 9. Implement Indexes for Aggregation
 To optimize aggregation and grouping, the following indexes were added:
 ```sql
 ALTER TABLE `Order` ADD INDEX idx_user (user);
 ALTER TABLE `OrderTicket` ADD INDEX idx_order_id (order_id);
 ```
 
-## 9. Assess Query Performance (After Indexing)
+## 10. Reusing Existing Indexes
+As mentioned previously, the `Order.idx_user` and `OrderTicket.idx_order_id` indexes already existed and were reused effectively to improve the aggregation query's performance.
+
+## 11. Assess Query Performance (After Indexing)
 ### After Adding Indexes
 - **Details**:
   - Execution time significantly reduced.
   - Indexes enabled efficient grouping and aggregation.
 
-## 10. Comparison for Query 2
+## 12. Comparison for Query 2
 | Metric                | Before Indexing      | After Indexing      |
 |-----------------------|----------------------|---------------------|
 | Execution Time (ms)   | ~14.783             | ~7.647             |
