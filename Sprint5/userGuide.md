@@ -61,14 +61,14 @@ This app provides functionality for users to view events and purchase tickets, f
    - Click on a performer or a player to view their details, including bio, website, and Wikipedia link.
 
 3. **View Event details and Buy Tickets**:
-   - Click on an event to view event details, and click on **View Artist/Team Details** to view performers/players details.
+   - Click on an event card in the homepage to view event details, and click on **View Artist/Team Details** to view performers/players details.
    - Click **Buy Tickets** to purchase tickets for the event. Select the ticket type and fill in the quantity you wish to purchase.
    - Click **Pay now** to complete the purchase process.
 
 ---
 
 ### Admin Dashboard (For Admins)
-1. **Editing Event Information**:
+1. **Editing performers/players Information**:
    - Log in through the admin portal.
    - Click **Edit People** button.
    - Click on any row of performers/players to edit their information.
