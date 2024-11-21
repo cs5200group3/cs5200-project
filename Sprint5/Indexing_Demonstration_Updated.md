@@ -21,8 +21,6 @@ LIMIT 0, 25;
 
 ## 2. Assess Query Performance (Before Indexing)
 ### Before Adding Indexes
-- **EXPLAIN ANALYZE Output**:
-![Before Indexing](Pasted%20Graphic%202.png)
 - **Details**:
   - Query uses nested loop joins, resulting in higher execution time.
   - Key fields like `ot.order_id`, `ot.ticket_id`, and `t.event_id` do not use indexes effectively.
@@ -37,8 +35,6 @@ ALTER TABLE Ticket ADD INDEX idx_event_id (event_id);
 
 ## 4. Assess Query Performance (After Indexing)
 ### After Adding Indexes
-- **EXPLAIN ANALYZE Output**:
-![After Indexing](Pasted%20Graphic%203.png)
 - **Details**:
   - Execution time significantly reduced.
   - Indexes on `order_id`, `ticket_id`, and `event_id` enabled efficient lookups.
@@ -67,8 +63,6 @@ GROUP BY o.user;
 
 ## 7. Assess Query Performance (Before Indexing)
 ### Before Adding Indexes
-- **EXPLAIN ANALYZE Output**:
-![Before Aggregation Indexing](Pasted%20Graphic%205.jpeg)
 - **Details**:
   - High execution time due to full table scans and inefficient aggregation.
 
@@ -81,8 +75,6 @@ ALTER TABLE `OrderTicket` ADD INDEX idx_order_id (order_id);
 
 ## 9. Assess Query Performance (After Indexing)
 ### After Adding Indexes
-- **EXPLAIN ANALYZE Output**:
-![After Aggregation Indexing](Pasted%20Graphic%206.png)
 - **Details**:
   - Execution time significantly reduced.
   - Indexes enabled efficient grouping and aggregation.
