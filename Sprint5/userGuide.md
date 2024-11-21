@@ -60,12 +60,17 @@ This app provides functionality for users, event organizers, and admins to manag
 ### Browsing Events and Buying Tickets (Main Page)
 1. **Browse Events**:
    - On the main page, browse a list of available events.
-   - Use filters (e.g., date, location, or category) to narrow your search.
+   - Use filters (e.g., date and category) to narrow your search.
 
-2. **Buy Tickets**:
+2. **Search for Performers and Sports Teams**:
+   - On the main page, click on the **Performers** or **Sports Teams** tab.
+   - Use filters (e.g., name and category) to search for specific performers or sports teams.
+   - Click on a performer or sports team to view their details, including bio, website, and Wikipedia link.
+
+3. **Buy Tickets**:
    - Click on an event to view details.
-   - Select the number of tickets you wish to purchase.
-   - Click **Buy Now** and complete the checkout process.
+   - Select the number of tickets and ticket type you wish to purchase.
+   - Click **Buy Tickets** and complete the purchase process.
 
 ---
 
@@ -76,10 +81,9 @@ This app provides functionality for users, event organizers, and admins to manag
    - Select an event to edit its details (e.g., name, description, date, location, or ticket availability).
    - Save changes by clicking **Update Event**.
 
-2. **Creating a New Event**:
-   - In the admin dashboard, click **Create New Event**.
-   - Fill out all required fields (e.g., name, date, description).
-   - Click **Save** to publish the new event.
+2. **See Summary Report**:
+   - Navigate to the **Summary Report** section.
+   - View the summary report of the event, including ticket sales, revenue, and other relevant metrics. 
 
 ---
 
