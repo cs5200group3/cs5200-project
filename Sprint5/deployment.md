@@ -12,8 +12,8 @@ one example admin info:
 - password: `)X1fjAPmca`
 
 one example user info:
-- username: `ztaylor`
-- password: `q1F1HebK)m`
+- username: `pguerra`
+- password: `j3g3P$Ce+O`
 
 No sign up is available, so users must be given the admin credentials.
 
