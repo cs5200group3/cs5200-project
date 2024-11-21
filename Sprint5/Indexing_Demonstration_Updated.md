@@ -24,8 +24,8 @@ LIMIT 0, 25;
   - Query uses nested loop joins, resulting in higher execution time.
   - Key fields like `ot.order_id`, `ot.ticket_id`, and `t.event_id` do not use indexes effectively.
 
-### Step 3: Implement Indexes
-To optimize query performance, the following indexes were added:
+#### Step 3: Implement Indexes
+The `user` column in the `Order` table already had an existing index, which was effectively utilized to optimize Query 1 without requiring additional indexing. Additionally, the following indexes were added:
 ```sql
 ALTER TABLE OrderTicket ADD INDEX idx_order_id (order_id);
 ALTER TABLE OrderTicket ADD INDEX idx_ticket_id (ticket_id);
@@ -63,22 +63,15 @@ GROUP BY o.user;
 - **Details**:
   - High execution time due to full table scans and inefficient aggregation.
 
-### Step 3: Implement Indexes for Aggregation
-To optimize aggregation and grouping, the following indexes were added:
-```sql
-ALTER TABLE `Order` ADD INDEX idx_user (user);
-ALTER TABLE `OrderTicket` ADD INDEX idx_order_id (order_id);
-```
+### Step 3: Reuse Existing Indexes
+The indexes optimized in Query 1 (`idx_order_id`, `idx_ticket_id`, and `idx_event_id`) were reused effectively to support the aggregation and grouping operations in Query 2. Additionally, the `user` column in the `Order` table already had an existing index (`idx_user`), which further optimized the query by enabling efficient grouping and filtering. No new indexes were required, as the existing ones fully covered the query’s needs.
 
-### Step 4: Reuse Existing Indexes
-As mentioned previously, the `Order.idx_user` and `OrderTicket.idx_order_id` indexes already existed and were reused effectively to improve the aggregation query's performance.
-
-### Step 5: Assess Query Performance (After Indexing)
+### Step 4: Assess Query Performance (After Indexing)
 - **Details**:
   - Execution time significantly reduced.
   - Indexes enabled efficient grouping and aggregation.
 
-### Step 6: Comparison of Results
+### Step 5: Comparison of Results
 | Metric                | Before Indexing      | After Indexing      |
 |-----------------------|----------------------|---------------------|
 | Execution Time (ms)   | ~14.783             | ~7.647             |
