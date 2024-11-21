@@ -1,3 +1,14 @@
+-- Purpose:
+-- The GenerateSummaryReport procedure generates a summary report 
+-- for events within a specified date range. 
+-- It aggregates data such as total tickets sold, total revenue, and average ratings for each event
+-- and stores the results in the SummaryReport table.
+
+-- Parameters:
+-- start_date: The start of the date range for filtering events.
+-- end_date: The end of the date range for filtering events.
+
+
 DELIMITER $$
 
 CREATE PROCEDURE GenerateSummaryReport(
