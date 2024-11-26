@@ -19,6 +19,7 @@ Example: Limiting a phone number field to a maximum of 14 characters to ensure v
 ## Limitations
 - **Performance**: Slight overhead for high-volume operations.
 - **Complexity**: Debugging triggers can be challenging.
+- **Limited Flexibility**: Triggers are less flexible compared to application-level validation, where more complex logic and user interactions can be handled.
 
 ## Summary
 The `BEFORE INSERT` trigger is a reliable way to enforce data validation rules directly at the database level, ensuring consistent and accurate data storage.
