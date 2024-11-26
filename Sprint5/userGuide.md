@@ -71,7 +71,7 @@ This app provides functionality for users to view events and purchase tickets, f
 1. **Editing performers/players Information**:
    - Log in through the admin portal.
    - Click **Edit People** button.
-   - Click on any row of performers/players to edit their information.
+   - Click on any row of performers/players and edit their information in the side panel.
    - Save changes by clicking **Update**.
 
 2. **Generate Summary Report**:
